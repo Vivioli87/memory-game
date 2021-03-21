@@ -1,10 +1,10 @@
 # Memory game
 
-*Developed and designed as part of Milestone Project 2:*  
+*Developed and designed as part of Milestone Project 2: Interactive Frontend Development*  
 
 [Please view the live project here](https://vivioli87.github.io/memory-game/)
 
-![Mockup](./assets/readme_images/Mockup.jpg)
+![Mockup]()
 
 ## Table of Contents
 
@@ -49,10 +49,25 @@ My MS2 project in my Code Institute course –
 
 The user types for this website would be fans (old and new), key people within the music industry and the band themselves.  
 
-### Visitor Stories 
+### Visitor Stories
+1. As a site visitor, I would like to have fun playing a simple memory game.
+2. As a site visitor, I would like to have a brief overview of the rules before playing.
+3. As a site visitor, I would like to be able to play different levels.
+4. As a site visitor, I would like to be able to see how long each game took and how many moves were made.
+5. As a site visitor, I would like to be able to view the top scores/scorers on each level.
+6. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
+7. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.
+8. As a site visitor, I would like a the game website to be easily navigable and have sleek design, that is responsive on different devices.
+9. As a site visitor, I want the imagery and colors to be eye-catching that make me want to learn more about succulent plants.
 
 
 ### Business Stories
+1. As a site owner, I have the same goals as the external users. I would like to make a game that I would enjoy playing.
+2. As a site owner, I would like to make the game instructions simple to follow.
+3. As a site owner, I would like to make the game logical to follow and interact with, even without reading the instructions prior.
+3. As a site owner, I would like to provide a lot of interactivity within the game to provide information regarding the time taken, number of moves etc in order to produce 'top scores' and to provide a competitive element to the game.
+4. As a site owner, I would like to share my passion for succulent plants as well as advice (separate to the game) on how to care for them.
+5. As a site owner, I would like to provide a google map service so users can look up their local garden centre/succulent stockist.
 
 
 [Back to table of contents](#table-of-contents)
@@ -62,17 +77,17 @@ The user types for this website would be fans (old and new), key people within t
 The memory game website is designed to be effective, consistent and user friendly.
 - Interaction Design
     - Consistent design will be used throughout the website to maintain a good UX.
-    - The simple navigation bar with the band’s logo as the brand will make the website look simple and attractive.
+    - The simple navigation bar will be consistent across all pages.
     - The navigation links when hovered over will provide a visual indication to the site visitors what they are selecting.
     - The navigation link on the active page will provide a visual indication to the site visitors of what page they are currently viewing.
     - Buttons when hovered over will provide a visual indication to the site visitors what they are selecting.
-    - Consistent color scheme will be used to let visitors focus on the band’s logo and brand. The ‘hero image’ on the main page will be chosen based on how it fits in with this color scheme also.
-    - Links to external pages will open in a new tab so the user is not taken away from the band website.
+    - Consistent color scheme will be used throughout the site.
+    - Links to external pages will open in a new tab so the user is not taken away from the game website.
 - Information Architecture (IA)
-    - The project was conceptualized to consist of a home page and three sub-pages. This structure was used because it is simple and familiar to the site visitors and it is sufficient for most user cases.
+    - The project was conceptualized to consist of a home page and *** sub-pages. This structure was used because it is simple and familiar to the site visitors and it is sufficient for most user cases.
     - On each page there will be a consistent footer which will include:
-        1. navigation links to external social media and music streaming pages.
-        2.	Navigation link to the contact page, creating visual reminders to book the band or ask for more information
+        1. the creator of the game.
+        2. 
     - Each page is clearly titled to make navigating the site clear and simple.
     - The content is organized and categorized by importance from left to right (navigation).
 
@@ -87,6 +102,10 @@ The memory game website is designed to be effective, consistent and user friendl
 ## Design
 
 ### Color Scheme
+
+- I want the color scheme to incorporate the colors of succulents. Whilst there are many various succulent colors, I decided on pastel shades of green and purple so that the colors aren't too bold and overtake the content.
+- The color scheme of the cards involved with the game will have colors/designs on the back of the card the same to aid with the game play.
+
 
 
 ### Fonts
