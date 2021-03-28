@@ -18,7 +18,7 @@ body, html {
 }
 
 .bg-image{
-    background-image: url(../assets/Images/pexels-maureen-bekker-1207978.jpg);  /*unsure about image - might change!*/
+    background-image: url(../Images/pexels-maureen-bekker-1207978.jpg);  /*unsure about image - might change!*/
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
