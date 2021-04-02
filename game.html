@@ -38,17 +38,13 @@
         <div id="game-area">
             <h2>Play Succulent Match...</h2>
             <h4>Choose your difficulty level:</h4>
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-                    <input type="radio" name="game-levels" id="game-level-easy" checked> Easy
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="game-levels" id="game-level-medium"> Medium
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="game-levels" id="game-level-hard"> Hard
-                </label>
+            <div class="btn-group container" role="group" aria-label="difficulty levels">
+                <button class="btn btn-secondary" data-type="easy">Easy</button>
+                <button class="btn btn-secondary" data-type="medium">Medium</button>
+                <button class="btn btn-secondary" data-type="hard">Hard</button>
             </div>
+            <br>
+            <button class="start-button" data-type="start">Start Game</button>
             <div id="card-area">
             <!--where cards will be dealt-->
             </div>
