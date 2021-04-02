@@ -151,3 +151,25 @@ section.inner-container{
     padding: 5px 115px;
     margin-top: 20px;
 }
+
+#card-area {
+    margin-top: 20px;
+    width: 85%;
+}
+.card-row {
+    justify-content: center;
+    justify-content: space-between;
+    height: 250px;
+
+}
+
+.deck-card {
+    justify-content: center;
+    background-color: #31315b;
+    border: 1px groove #31315b;
+    width: 18%;
+}
+
+.show-card {
+     background-image: url(../Images/pexels-maureen-bekker-1207978.jpg);
+}

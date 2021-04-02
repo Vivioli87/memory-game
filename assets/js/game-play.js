@@ -3,9 +3,9 @@
         //template literals to apply a base format for card layout 3x4 (3 rows x 4 columns on xl, 4 r x 3 x on smaller devices)
         //add extra row (4 cards) per difficulty
 
-let easyLevel = 12; //put these in function so they are not global
-let mediumLevel = 16;
-let hardLevel = 20;
+// easyLevel = 12 - 6 pairs 
+// mediumLevel = 16 - 8 pairs
+// hardLevel = 20 - 10 pairs
 
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
@@ -18,9 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 let difficultyLevel = this.getAttribute("data-type");
                 alert(`You clicked ${difficultyLevel}`);
             };
-            buttons.classList.remove("active"); //console doesn't like this - **think of better way**
             this.classList.add("active");
-
         })
     }
 })
@@ -37,9 +35,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function startGame () {
 
+
+
 }
 
 function cardsClicked () {
+
+    let cards = document.getElementsByClassName("deck-card");
+    for (let card of cards) {
+    card.addEventListener("click",function(){
+        card.classList.add("show-card");
+    });
+    }
 
 }
 
