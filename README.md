@@ -1,4 +1,4 @@
-# Memory game
+# Succulent Match - A memory game
 
 *Developed and designed as part of Milestone Project 2: Interactive Frontend Development*  
 

@@ -8,20 +8,22 @@
 // hardLevel = 20 - 10 pairs
 
 document.addEventListener("DOMContentLoaded", function(){
-    let buttons = document.getElementsByTagName("button");
+    let buttons = document.getElementsByClassName("btn-secondary");
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") == "start") {
-               alert("You clicked start")
+               startGame();
             } else {
                 let difficultyLevel = this.getAttribute("data-type");
                 alert(`You clicked ${difficultyLevel}`);
             };
-            this.classList.add("active");
+            document.getElementsByClassName("btn-secondary").classList.remove("active-level");
+            this.classList.add("active-level");
         })
     }
 })
+
 
 //function to generate pairs of pictures, randomize in the layot.
 
@@ -36,17 +38,9 @@ document.addEventListener("DOMContentLoaded", function(){
 function startGame () {
 
 
-
 }
 
 function cardsClicked () {
-
-    let cards = document.getElementsByClassName("deck-card");
-    for (let card of cards) {
-    card.addEventListener("click",function(){
-        card.classList.add("show-card");
-    });
-    }
 
 }
 

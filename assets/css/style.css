@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
+
 /*
 font-family: 'Lobster', cursive;
 font-family: 'Montserrat', sans-serif;  ------ need to find better 2nd font to match heading font
@@ -39,6 +40,21 @@ h1, h2, h3, h4{
      color: #31315b;
      font-weight: 900;
       line-height: 48px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.home-page-button{
+    border: 2px groove #31315b;
+    margin: 10px 20px 0;
+    color: rgb(166, 172, 194);
+    font-weight: 800;
+    background-color: #31315b;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 
@@ -130,8 +146,14 @@ section.inner-container{
     font-weight: 800;
     background-color: rgb(166, 172, 194)   
 }
+.active-level{
+    color: rgb(166, 172, 194);
+    background-color: #31315b;
+    border: 2px  #31315b;
+}
 
-.btn-group button.btn.btn-secondary.active{
+/*added as after clicking button it would turn grey from bootstrap styling*/
+.btn-group button.btn.btn-secondary:focus {
     color: rgb(166, 172, 194);
     background-color: #31315b;
     border: 2px  #31315b;
@@ -150,26 +172,4 @@ section.inner-container{
     background-color: rgb(166, 172, 194);
     padding: 5px 115px;
     margin-top: 20px;
-}
-
-#card-area {
-    margin-top: 20px;
-    width: 85%;
-}
-.card-row {
-    justify-content: center;
-    justify-content: space-between;
-    height: 250px;
-
-}
-
-.deck-card {
-    justify-content: center;
-    background-color: #31315b;
-    border: 1px groove #31315b;
-    width: 18%;
-}
-
-.show-card {
-     background-image: url(../Images/pexels-maureen-bekker-1207978.jpg);
 }
