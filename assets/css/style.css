@@ -182,6 +182,9 @@ section.inner-container{
 }
 
 .game-card{
+    background-color: #31315b;
     height: 175px;
     width: 125px;
+    margin: 25px;
+    justify-content: center;
 }
