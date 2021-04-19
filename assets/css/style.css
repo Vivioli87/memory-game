@@ -31,7 +31,7 @@ body, html {
     background-image: url(../Images/pexels-maureen-bekker-1207978.jpg);  /*unsure about image - might change!*/
     height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
 }
 
@@ -128,14 +128,14 @@ h1, h2, h3, h4{
 
 section.inner-container{
     background: cover;
-    height: 100%;
+    height: fit-content;
     text-align: center;
     background-color: rgb(166, 172, 194, 0.8)
 }
 
 #game-area{
     border: 2px groove #31315b;
-    height: 100%;
+    height: fit-content;
     margin-bottom: 15px;
 }
 
@@ -194,7 +194,7 @@ section.inner-container{
 @media only screen and (max-width: 600px) {
   .game-card-area {
     display: grid;
-    grid-template-columns: repeat(3, 120px);
+    grid-template-columns: repeat(3, 100px);
     grid-gap: 10px;
     justify-content: center;
   }
