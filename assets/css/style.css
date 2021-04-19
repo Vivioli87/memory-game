@@ -174,3 +174,14 @@ section.inner-container{
     padding: 5px 115px;
     margin-top: 20px;
 }
+
+.game-card-area{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+}
+
+.game-card{
+    height: 175px;
+    width: 125px;
+}
