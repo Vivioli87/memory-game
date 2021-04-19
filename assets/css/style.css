@@ -190,6 +190,7 @@ section.inner-container{
     margin: 25px;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 5px 5px 18px #31315b;
 }
 
 .card-back, .card-front{
@@ -202,11 +203,18 @@ section.inner-container{
 }
 
 .card-back {
-    border: 5px double #31315b;
+    border: 5px double #262646;
 }
 
 .card-back img {
     opacity: 0.5;
+}
+
+h3.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 600px) {
@@ -222,7 +230,7 @@ section.inner-container{
     height: 125px;
     width: 75px;
     margin: 15px;
-     border: 2px double #31315b;
+    border: 2px double #31315b;
     border-radius: 5px;
     overflow: hidden;
     }
