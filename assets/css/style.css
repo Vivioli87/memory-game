@@ -173,12 +173,14 @@ section.inner-container{
     background-color: rgb(166, 172, 194);
     padding: 5px 115px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.game-card-area{
+.game-card-area {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 150px);
     grid-gap: 10px;
+    justify-content: center;
 }
 
 .game-card{
@@ -186,5 +188,23 @@ section.inner-container{
     height: 175px;
     width: 125px;
     margin: 25px;
-    justify-content: center;
+    border-radius: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .game-card-area {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+
+  .game-card{
+    background-color: #31315b;
+    height: 125px;
+    width: 75px;
+    margin: 15px;
+    border-radius: 5px;
+    }
+}
+
