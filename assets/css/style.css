@@ -220,6 +220,8 @@ h3.text-overlay {
     z-index: 4;
 }
 
+/*media queries for game page - card grid */
+
 @media only screen and (max-width: 720px) {
   .game-card-area {
     display: grid;
@@ -236,6 +238,20 @@ h3.text-overlay {
     border: 2px double #31315b;
     border-radius: 5px;
     overflow: hidden;
+    }
+
+    .card-back, .card-front{
+    position: absolute;
+    height: 125px;
+    width: 75px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgb(210, 227, 196, 0.2);
+    border: 5px double #31315b;
+    }
+
+    h3.text-overlay {
+        font-size: 50%;
     }
 }
 
@@ -256,5 +272,19 @@ h3.text-overlay {
     border: 2px double #31315b;
     border-radius: 5px;
     overflow: hidden;
+    }
+
+    .card-back, .card-front{
+    position: absolute;
+    height: 125px;
+    width: 75px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgb(210, 227, 196, 0.2);
+    border: 5px double #31315b;
+    }
+
+      h3.text-overlay {
+        font-size: 50%;
     }
 }
