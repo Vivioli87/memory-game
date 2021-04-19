@@ -253,12 +253,48 @@ h3.text-overlay {
     }
 
     h3.text-overlay {
-        font-size: 100%;
+        font-size: 140%;
     }
 }
 
 
 @media only screen and (max-width: 570px) {
+  .game-card-area {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .game-card{
+    background-color: #31315b;
+    height: 130px;
+    width: 90px;
+    margin: 15px;
+    border: 2px double #31315b;
+    border-radius: 5px;
+    overflow: hidden;
+    }
+
+    .card-back, .card-front{
+    position: absolute;
+    height: 130px;
+    width: 90px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgb(210, 227, 196, 0.2);
+    border: 5px double #31315b;
+    }
+
+      h3.text-overlay {
+        font-size: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 350px) {
   .game-card-area {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -268,8 +304,8 @@ h3.text-overlay {
 
   .game-card{
     background-color: #31315b;
-    height: 125px;
-    width: 75px;
+    height: 150px;
+    width: 100px;
     margin: 15px;
     border: 2px double #31315b;
     border-radius: 5px;
@@ -278,8 +314,8 @@ h3.text-overlay {
 
     .card-back, .card-front{
     position: absolute;
-    height: 125px;
-    width: 75px;
+   height: 150px;
+    width: 100px;
     overflow: hidden;
     border-radius: 5px;
     background-color: rgb(210, 227, 196, 0.2);
