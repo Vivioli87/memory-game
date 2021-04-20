@@ -40,9 +40,14 @@ function startGame () {
 
 }
 
-function cardsClicked () {
+let cards = document.getElementsByClassName("game-card");
 
+for (let card of cards) {
+  card.addEventListener("click", function() {
+    this.classList.toggle("flip");
+  });
 }
+
 
 function checkPairMatch () {
 
