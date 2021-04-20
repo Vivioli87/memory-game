@@ -24,6 +24,8 @@ body, html {
     margin-right: 15px;
     margin-bottom: 15px;
     width: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #31315b;
     
 }
 
@@ -195,6 +197,7 @@ section.inner-container{
     position: relative;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    justify-content: center;
 }
 
 .game-card.flip{
@@ -220,148 +223,148 @@ section.inner-container{
 
 h3.text-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 80px;
+    left: 60px;
     transform: translate(-50%, -50%);
     color: #31315b;
     z-index: 2;
-    font-weight: 900;
-    letter-spacing: 2px;
+    border: 5px solid #31315b;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 50%;
 }
 
-/*media queries for game page - card grid */
+
+.game-info-area{
+    color: inherit;
+    font-family: inherit;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+}
+
+.game-info-area div{
+    padding: 20px 5px 20px;
+    font-weight: 900;
+}
+
+/*media queries for game page */
+
+@media only screen and (max-width: 990px) {
+    .game-info-area{
+        grid-template-columns: repeat(2, 250px);
+        padding: 10px 5px 10px;
+    }
+}
+
 
 @media only screen and (max-width: 720px) {
   .game-card-area {
-    display: grid;
     grid-template-columns: repeat(4, 120px);
     grid-gap: 10px;
-    justify-content: center;
   }
 
   .game-card{
-    background-color: #31315b;
     height: 150px;
     width: 100px;
     margin: 15px;
-    border: 2px double #31315b;
-    border-radius: 5px;
-    overflow: hidden;
     }
 
     .card-back, .card-front{
-    position: absolute;
     height: 150px;
     width: 100px;
-    overflow: hidden;
-    border-radius: 5px;
-    background-color: rgb(210, 227, 196, 0.2);
-    border: 5px double #31315b;
     }
 
     h3.text-overlay {
         font-size: 140%;
+        top: 70px;
+        left: 45px;
+        padding: 15px;
     }
 }
 
 
 @media only screen and (max-width: 600px) {
   .game-card-area {
-    display: grid;
     grid-template-columns: repeat(3, 120px);
     grid-gap: 5px;
-    justify-content: center;
-    margin-right: 10px;
   }
 
   .game-card{
-    background-color: #31315b;
     height: 130px;
     width: 90px;
     margin: 15px;
-    border: 2px double #31315b;
-    border-radius: 5px;
-    overflow: hidden;
     }
 
     .card-back, .card-front{
-    position: absolute;
     height: 130px;
     width: 90px;
-    overflow: hidden;
-    border-radius: 5px;
-    background-color: rgb(210, 227, 196, 0.2);
-    border: 5px double #31315b;
     }
 
-      h3.text-overlay {
-        font-size: 100%;
+    h3.text-overlay {
+      font-size: 100%;
+      top: 60px;
+      left: 40px;
+      padding: 10px;
+    }
+
+    .game-info-area{
+        grid-template-columns: repeat(1, 250px);
+        padding: 20px 5px 20px;
+    }
+
+    .game-info-area div{
+        padding: 5px;
     }
 }
 
 @media only screen and (max-width: 450px) {
   .game-card-area {
-    display: grid;
     grid-template-columns: repeat(3, 120px);
     grid-gap: 5px;
-    justify-content: center;
-    margin-right: 10px;
   }
 
   .game-card{
-    background-color: #31315b;
     height: 130px;
     width: 90px;
     margin: 15px;
-    border: 2px double #31315b;
-    border-radius: 5px;
-    overflow: hidden;
     }
 
     .card-back, .card-front{
-    position: absolute;
     height: 130px;
     width: 90px;
-    overflow: hidden;
-    border-radius: 5px;
-    background-color: rgb(210, 227, 196, 0.2);
-    border: 5px double #31315b;
     }
 
       h3.text-overlay {
         font-size: 100%;
+        top: 60px;
+        left: 40px;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   .game-card-area {
-    display: grid;
     grid-template-columns: repeat(2, 125px);
-    grid-gap: 10px;
-    justify-content: center;
+    grid-gap: 5px;
   }
 
   .game-card{
-    background-color: #31315b;
     height: 150px;
     width: 100px;
     margin: 15px;
-    border: 2px double #31315b;
-    border-radius: 5px;
-    overflow: hidden;
     }
 
     .card-back, .card-front{
-    position: absolute;
-   height: 150px;
+    height: 150px;
     width: 100px;
-    overflow: hidden;
-    border-radius: 5px;
-    background-color: rgb(210, 227, 196, 0.2);
-    border: 5px double #31315b;
     }
 
       h3.text-overlay {
         font-size: 100%;
+        top: 65px;
+        left: 45px;
+        padding: 15px;
     }
 }
