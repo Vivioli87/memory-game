@@ -204,6 +204,11 @@ section.inner-container{
     transform: rotateY(180deg);
 }
 
+.game-card.matched{
+    visibility: hidden;
+    transition: 1s;
+}
+
 .card-back, .card-front{
     position: absolute;
     height: 175px;

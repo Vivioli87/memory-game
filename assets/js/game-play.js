@@ -40,17 +40,37 @@ function startGame () {
 
 }
 
-let cards = document.getElementsByClassName("game-card");
+const cards = document.getElementsByClassName("game-card");
 
 for (let card of cards) {
-  card.addEventListener("click", function() {
-    this.classList.toggle("flip");
-  });
+  card.addEventListener("click", flipCard);
 }
 
+let clickedCards = [];
 
-function checkPairMatch () {
+function flipCard (event) {
+    this.classList.add("flip");
+    clickedCards.push(this);
+    console.log(clickedCards);
 
+    let firstCard = clickedCards[0];
+    let secondCard = clickedCards[1];
+
+    if (firstCard.dataset.succulent === secondCard.dataset.succulent) {
+        firstCard.classList.add("matched");
+        secondCard.classList.add("matched");
+        clickedCards = [];
+    } else {
+        clickedCards = [];
+        setTimeout(noMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match
+    };
+}
+
+function noMatch () {
+    for (let card of cards) {
+        card.classList.remove("flip");
+        card.addEventListener("click", flipCard);
+    };
 }
 
 function numberOfClicks () {
