@@ -8,6 +8,8 @@
 // hardLevel = 20 - 10 pairs
 
 document.addEventListener("DOMContentLoaded", function(){
+    alert("DOM is ready");
+    shuffleCards();
     let buttons = document.getElementsByClassName("btn-secondary");
 
     for (let button of buttons) {
@@ -35,12 +37,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // pop up if user tries to leave game before finished window.beforeunload
 
+const cards = document.getElementsByClassName("game-card");
+
 function startGame () {
 
 
 }
 
-const cards = document.getElementsByClassName("game-card");
+function shuffleCards() {
+    for (let card of cards) {
+        let randomPos = Math.floor(Math.random() * 12);
+        card.style.order = randomPos;
+    };
+}
 
 for (let card of cards) {
   card.addEventListener("click", flipCard);
