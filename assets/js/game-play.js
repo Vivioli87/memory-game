@@ -52,6 +52,7 @@ function checkMatch () {
     if (firstCard.dataset.succulent === secondCard.dataset.succulent) {
         firstCard.classList.add("matched");
         secondCard.classList.add("matched");
+        incrementCorrectMatches();
         clickedCards = [];
     } else {
         clickedCards = [];
@@ -64,6 +65,17 @@ function noMatch () {
         card.classList.remove("flip");
         card.addEventListener("click", flipCard);
     };
+    incrementIncorrectMatches();
+}
+
+function incrementCorrectMatches () {
+    let oldScore = parseInt(document.getElementById("correct-matches").innerText);
+    document.getElementById("correct-matches").innerText = ++oldScore;
+}
+
+function incrementIncorrectMatches () {
+    let oldScore = parseInt(document.getElementById("incorrect-matches").innerText);
+    document.getElementById("incorrect-matches").innerText = ++oldScore;
 }
 
 function numberOfMoves () {
