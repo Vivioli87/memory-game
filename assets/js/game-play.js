@@ -35,6 +35,7 @@ function displayEasyLevel () {
 
     removeMedCards();
     removeHardCards();
+    resetScores();
 
     let cards = document.getElementsByClassName("game-card");
 
@@ -52,6 +53,7 @@ function displayEasyLevel () {
 function displayMediumLevel () {
     removeMedCards();
     removeHardCards();
+    resetScores();
 
     let gameArea = document.getElementsByClassName("game-card-area")[0];
     let medCard1 = document.createElement('div');
@@ -99,6 +101,7 @@ function displayMediumLevel () {
 // adds the 4 cards from medium level and 4 extra cards
 function displayHardLevel () {
     displayMediumLevel();
+    resetScores();
     let gameArea = document.getElementsByClassName("game-card-area")[0];
     let hardCard1 = document.createElement('div');
     hardCard1.classList.add("game-card", "hard-level");
@@ -156,6 +159,12 @@ function removeHardCards () {
     while (hardCards.length > 0) {
         hardCards[0].parentNode.removeChild(hardCards[0]);
     };
+}
+
+function resetScores () {
+    document.getElementById("correct-matches").innerText = "0";
+    document.getElementById("incorrect-matches").innerText = "0";
+
 }
 
 function shuffleCards() {
