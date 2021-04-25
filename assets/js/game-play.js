@@ -48,25 +48,27 @@ function displayMediumLevel () {
     let gameArea = document.getElementsByClassName("game-card-area")[0];
     let medCard1 = document.createElement('div');
     medCard1.classList.add("game-card", "medium-level");
+    medCard1.setAttribute("data-succulent", "turquoise");
     medCard1.innerHTML = `
         <div class="card-back">
             <img src="./assets/Images/card-cover2.jpg" alt="back of card">
             <h3 class="text-overlay">Succulent Match</h3>
         </div>
         <div class="card-front">
-            <img src="./assets/Images/gulnaz-shaidullina-Aot6EFo3rWc-unsplash-re-sized.jpg" alt="grey succulent">
+            <img src="./assets/Images/erol-ahmed-aIYFR0vbADk-unsplash-resized.jpg" alt="turquoise succulent">
         </div>
         `;
     let medCard1Clone = medCard1.cloneNode(true);
     let medCard2 = document.createElement('div');
     medCard2.classList.add("game-card", "medium-level", "hard-level");
+    medCard2.setAttribute("data-succulent", "aloe");
     medCard2.innerHTML = `
         <div class="card-back">
             <img src="./assets/Images/card-cover2.jpg" alt="back of card">
             <h3 class="text-overlay">Succulent Match</h3>
         </div>
         <div class="card-front">
-            <img src="./assets/Images/gulnaz-shaidullina-Aot6EFo3rWc-unsplash-re-sized.jpg" alt="grey succulent">
+            <img src="./assets/Images/jude-smart-lE6z79guKI0-unsplash-resized.jpg" alt="aloe succulent">
         </div>
         `;
     let medCard2Clone = medCard2.cloneNode(true);
@@ -92,25 +94,27 @@ function displayHardLevel () {
     let gameArea = document.getElementsByClassName("game-card-area")[0];
     let hardCard1 = document.createElement('div');
     hardCard1.classList.add("game-card", "hard-level");
+    hardCard1.setAttribute("data-succulent", "jellybean");
     hardCard1.innerHTML = `
         <div class="card-back">
             <img src="./assets/Images/card-cover2.jpg" alt="back of card">
             <h3 class="text-overlay">Succulent Match</h3>
         </div>
         <div class="card-front">
-            <img src="./assets/Images/gulnaz-shaidullina-Aot6EFo3rWc-unsplash-re-sized.jpg" alt="grey succulent">
+            <img src="./assets/Images/michal-hlavac-i5drL-SLTmY-unsplash-re-sized.jpg" alt="jelly bean succulent">
         </div>
         `;
     let hardCard1Clone = hardCard1.cloneNode(true);
     let hardCard2 = document.createElement('div');
     hardCard2.classList.add("game-card", "hard-level");
+    hardCard2.setAttribute("data-succulent", "green");
     hardCard2.innerHTML = `
         <div class="card-back">
             <img src="./assets/Images/card-cover2.jpg" alt="back of card">
             <h3 class="text-overlay">Succulent Match</h3>
         </div>
         <div class="card-front">
-            <img src="./assets/Images/gulnaz-shaidullina-Aot6EFo3rWc-unsplash-re-sized.jpg" alt="grey succulent">
+            <img src="./assets/Images/lily-li-QU_QqdKv-Uk-unsplash-resized.jpg" alt="green succulent">
         </div>
         `;
     let hardCard2Clone = hardCard2.cloneNode(true);
