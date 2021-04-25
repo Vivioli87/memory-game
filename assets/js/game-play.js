@@ -30,9 +30,11 @@ function runGame(difficultyLevel) {
         displayHardLevel();
     };
 }
-
+//removing cards functions called at start to remove any additional cards added by selecting other levels
 function displayEasyLevel () {
-    shuffleCards();
+
+    removeMedCards();
+    removeHardCards();
 
     let cards = document.getElementsByClassName("game-card");
 
@@ -42,9 +44,15 @@ function displayEasyLevel () {
            card.classList.remove("inactive");
        };
     };
+
+    shuffleCards();
 }
-// adds 4 new cards to play with *NEED TO CHANGE IMAGES - USED OLD IMAGES TO TEST*
+// adds 4 new cards to play with 
+//removing cards functions called at start to remove any additional cards added by selecting other levels
 function displayMediumLevel () {
+    removeMedCards();
+    removeHardCards();
+
     let gameArea = document.getElementsByClassName("game-card-area")[0];
     let medCard1 = document.createElement('div');
     medCard1.classList.add("game-card", "medium-level");
@@ -60,7 +68,7 @@ function displayMediumLevel () {
         `;
     let medCard1Clone = medCard1.cloneNode(true);
     let medCard2 = document.createElement('div');
-    medCard2.classList.add("game-card", "medium-level", "hard-level");
+    medCard2.classList.add("game-card", "medium-level");
     medCard2.setAttribute("data-succulent", "aloe");
     medCard2.innerHTML = `
         <div class="card-back">
@@ -77,7 +85,6 @@ function displayMediumLevel () {
     gameArea.appendChild(medCard1Clone);
     gameArea.appendChild(medCard2);
     gameArea.appendChild(medCard2Clone);
-    shuffleCards();
 
     let cards = document.getElementsByClassName("game-card");
 
@@ -87,6 +94,7 @@ function displayMediumLevel () {
            card.classList.remove("inactive");
        };
     };
+    shuffleCards();
 }
 // adds the 4 cards from medium level and 4 extra cards
 function displayHardLevel () {
@@ -134,6 +142,20 @@ function displayHardLevel () {
        if (card.classList.contains("hard-level")) {
            card.classList.remove("inactive");
        };
+    };
+}
+
+function removeMedCards () {
+    let medCards = document.getElementsByClassName("medium-level");
+    while (medCards.length > 0) {
+        medCards[0].parentNode.removeChild(medCards[0]);
+    };
+}
+
+function removeHardCards () {
+    let hardCards = document.getElementsByClassName("hard-level");
+    while (hardCards.length > 0) {
+        hardCards[0].parentNode.removeChild(hardCards[0]);
     };
 }
 
