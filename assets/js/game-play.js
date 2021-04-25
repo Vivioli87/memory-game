@@ -41,11 +41,11 @@ function displayEasyLevel () {
    for (let card of cards) {
        card.addEventListener("click", flipCard);
        if (card.classList.contains("easy-level")) {
-           card.classList.remove("inactive");
+           card.classList.remove("inactive", "matched", "flip");
        };
     };
 
-    shuffleCards();
+    setTimeout(shuffleCards, 500);
 }
 // adds 4 new cards to play with 
 //removing cards functions called at start to remove any additional cards added by selecting other levels
@@ -91,10 +91,10 @@ function displayMediumLevel () {
    for (let card of cards) {
        card.addEventListener("click", flipCard);
         if (card.classList.contains("medium-level")) {
-           card.classList.remove("inactive");
+           card.classList.remove("inactive", "matched", "flip");
        };
     };
-    shuffleCards();
+    setTimeout(shuffleCards, 500);
 }
 // adds the 4 cards from medium level and 4 extra cards
 function displayHardLevel () {
@@ -133,16 +133,15 @@ function displayHardLevel () {
     gameArea.appendChild(hardCard2Clone);
 
 
-    shuffleCards();
-
     let cards = document.getElementsByClassName("game-card");
 
    for (let card of cards) {
        card.addEventListener("click", flipCard);
        if (card.classList.contains("hard-level")) {
-           card.classList.remove("inactive");
+           card.classList.remove("inactive", "matched", "flip");
        };
     };
+    setTimeout(shuffleCards, 500);
 }
 
 function removeMedCards () {
