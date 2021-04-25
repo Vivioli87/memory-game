@@ -149,7 +149,7 @@ section.inner-container{
     font-weight: 800;
     background-color: rgb(166, 172, 194)   
 }
-.active-level{
+button.btn.btn-secondary.active-level{
     color: rgb(166, 172, 194);
     background-color: #31315b;
     border: 2px  #31315b;
@@ -198,6 +198,10 @@ section.inner-container{
     transition: transform 0.8s;
     transform-style: preserve-3d;
     justify-content: center;
+}
+
+.game-card.easy-level.inactive, .game-card.medium-level.inactive, .game-card.hard-level.inactive{
+    visibility: hidden;
 }
 
 .game-card.flip{

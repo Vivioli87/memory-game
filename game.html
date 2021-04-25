@@ -39,15 +39,13 @@
             <h2>Play Succulent Match...</h2>
             <h4>Choose your difficulty level:</h4>
             <div class="btn-group container" role="group" aria-label="difficulty levels">
-                <button class="btn btn-secondary" data-type="easy">Easy</button>
-                <button class="btn btn-secondary" data-type="medium">Medium</button>
-                <button class="btn btn-secondary" data-type="hard">Hard</button>
+                <button class="btn btn-secondary" data-level="easy">Easy</button>
+                <button class="btn btn-secondary" data-level="medium">Medium</button>
+                <button class="btn btn-secondary" data-level="hard">Hard</button>
             </div>
-            <br>
-            <button class="start-button" data-type="start">Start Game</button>
              <!--where cards will be dealt-->
             <div class="game-card-area">
-                <div class="game-card" data-succulent="pearls">
+                <div class="game-card easy-level medium-level inactive" data-succulent="pearls">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -56,7 +54,7 @@
                         <img src="./assets/Images/string-of-pearls2.jpg" alt="string of pearls succulent">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="pearls">
+                <div class="game-card easy-level medium-level inactive" data-succulent="pearls">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -65,7 +63,7 @@
                         <img src="./assets/Images/string-of-pearls2.jpg" alt="string of pearls succulent">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="white">
+                <div class="game-card easy-level medium-level inactive" data-succulent="white">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -74,7 +72,7 @@
                         <img src="./assets/Images/fruit-pat-fPquneAScas-unsplash-resized.jpg" alt="White succulent">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="white">
+                <div class="game-card easy-level medium-level inactive" data-succulent="white">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -83,7 +81,7 @@
                         <img src="./assets/Images/fruit-pat-fPquneAScas-unsplash-resized.jpg" alt="White succulent">
                     </div>      
                 </div>
-                <div class="game-card" data-succulent="blue">
+                <div class="game-card easy-level medium-level inactive" data-succulent="blue">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -92,7 +90,7 @@
                         <img src="./assets/Images/yousef-espanioly-u16ZFBf4yUI-unsplash-re-sized.jpg" alt="blue/pink succulent">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="blue">
+                <div class="game-card easy-level medium-level inactive" data-succulent="blue">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -101,7 +99,7 @@
                         <img src="./assets/Images/yousef-espanioly-u16ZFBf4yUI-unsplash-re-sized.jpg" alt="blue/pink succulent">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="jade">
+                <div class="game-card easy-level medium-level inactive" data-succulent="jade">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -110,7 +108,7 @@
                         <img src="./assets/Images/eduardo-soares-xvlqmZzC_8Y-unsplash-re-sized.jpg" alt="jade plant">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="jade">
+                <div class="game-card easy-level medium-level inactive" data-succulent="jade">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -119,7 +117,7 @@
                         <img src="./assets/Images/eduardo-soares-xvlqmZzC_8Y-unsplash-re-sized.jpg" alt="jade plant">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="purple">
+                <div class="game-card easy-level medium-level inactive" data-succulent="purple">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -128,7 +126,7 @@
                         <img src="./assets/Images/annie-spratt-gSQbip5HHuc-unsplash-re-sized.jpg" alt="purple succulents">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="purple">
+                <div class="game-card easy-level medium-level inactive" data-succulent="purple">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -137,7 +135,7 @@
                         <img src="./assets/Images/annie-spratt-gSQbip5HHuc-unsplash-re-sized.jpg" alt="purple succulents">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="grey">
+                <div class="game-card easy-level medium-level inactive" data-succulent="grey">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
@@ -146,7 +144,7 @@
                         <img src="./assets/Images/gulnaz-shaidullina-Aot6EFo3rWc-unsplash-re-sized.jpg" alt="grey succulent">
                     </div>    
                 </div>
-                <div class="game-card" data-succulent="grey">
+                <div class="game-card easy-level medium-level inactive" data-succulent="grey">
                     <div class="card-back">
                         <img src="./assets/Images/card-cover2.jpg" alt="back of card">
                         <h3 class="text-overlay">Succulent Match</h3>
