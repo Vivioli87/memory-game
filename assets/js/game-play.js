@@ -171,6 +171,8 @@ function resetScores () {
 
 }
 
+//assigns random order to cards
+
 function shuffleCards() {
     let cards = document.getElementsByClassName("game-card");
 
@@ -184,7 +186,6 @@ function flipCard (event) {
 
     this.classList.add("flip");
     clickedCards.push(this);
-    console.log(clickedCards);
 
     checkMatch();
 }
@@ -195,6 +196,15 @@ function checkMatch () {
     let firstCard = clickedCards[0];
     let secondCard = clickedCards[1];
 
+    //stops the same card being clicked twice/double clicked and matched
+
+    firstCard.removeEventListener("click", flipCard);
+    secondCard.removeEventListener("click", flipCard);
+
+    if (clickedCards.length === 2) {
+        lockBoard();
+    };
+
     if (firstCard.dataset.succulent === secondCard.dataset.succulent) {
         firstCard.classList.add("matched");
         secondCard.classList.add("matched");
@@ -202,12 +212,16 @@ function checkMatch () {
         numberOfMoves();
         accuracy();
         clickedCards = [];
+        setTimeout(unlockBoard, 1000);
     } else {
         setTimeout(noMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match
         clickedCards = [];
     };
+
     gameWon();
 }
+
+//code to execute if pair is not a match
 
 function noMatch (firstCard, secondCard) {
     let cards = document.getElementsByClassName("game-card");
@@ -220,6 +234,26 @@ function noMatch (firstCard, secondCard) {
     numberOfMoves();
     accuracy();
 }
+
+//funtions to lockboard when clickedcards array reaches a length of 2 items to avoid a 3rd card being clicked
+//lockBoard removes the event listeners and unlockBoard adds them back when there's a match.
+function lockBoard() {
+    let cards = document.getElementsByClassName("game-card");
+
+    for (let card of cards) {
+        card.removeEventListener("click", flipCard);
+    };
+}
+
+function unlockBoard() {
+    let cards = document.getElementsByClassName("game-card");
+
+    for (let card of cards) {
+        card.addEventListener("click", flipCard);
+    };
+}
+
+//reveals 'Congratulations message' when all cards have been matched.
 
 function gameWon () {
     let gameArea = document.getElementsByClassName("game-card-area")[0];
