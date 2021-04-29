@@ -226,15 +226,10 @@ function gameWon () {
     let gameContainer = document.getElementsByClassName("inner-container")[0];
     let winInfo = document.createElement('div');
     winInfo.classList.add("win-info-container");
-    let movesCount = parseInt(document.getElementById("moves").innerText)
-    let correctMovesCount = parseInt(document.getElementById("correct-matches").innerText);
-    let accuracy = (correctMovesCount/movesCount) * 100;
     winInfo.innerHTML = `
-    <h2>Congratulations! You have completed the Level</h2>
-    <h4>Here are your scores</h4>
-    <p>Number of moves: ${movesCount}</p>
-    <p>Number of Correct Matches: ${correctMovesCount}</p>
-    <p>Your accuracy % was: ${accuracy}</p>
+    <h2>Congratulations! </h2>
+    <h4>You have completed the Level</h4>
+    <button onclick="document.location='game.html'" class="home-page-button">Click to play again!</button>
     `;
 
     let cards = document.getElementsByClassName("game-card");
