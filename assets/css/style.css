@@ -253,6 +253,14 @@ h3.text-overlay {
     font-weight: 900;
 }
 
+.win-info-container {
+    padding: 25px;
+    color: inherit;
+    font-family: inherit;
+    text-align: center;
+    border: 2px groove #31315b;
+}
+
 /*media queries for game page */
 
 @media only screen and (max-width: 990px) {

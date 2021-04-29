@@ -3,7 +3,6 @@
 let clickedCards = [];
 
 // wait for the DOM to load before running game.
-//shuffle cards on page load.
 
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -31,6 +30,7 @@ function runGame(difficultyLevel) {
     };
 }
 //removing cards functions called at start to remove any additional cards added by selecting other levels
+//reset scores
 function displayEasyLevel () {
 
     removeMedCards();
@@ -45,11 +45,12 @@ function displayEasyLevel () {
            card.classList.remove("inactive", "matched", "flip");
        };
     };
-
+// timeout set to reload cards first then shuffle if difficulty changed mid game
     setTimeout(shuffleCards, 500);
 }
 // adds 4 new cards to play with 
 //removing cards functions called at start to remove any additional cards added by selecting other levels
+//reset scores
 function displayMediumLevel () {
     removeMedCards();
     removeHardCards();
@@ -99,6 +100,7 @@ function displayMediumLevel () {
     setTimeout(shuffleCards, 500);
 }
 // adds the 4 cards from medium level and 4 extra cards
+//reset scores
 function displayHardLevel () {
     displayMediumLevel();
     resetScores();
@@ -164,6 +166,8 @@ function removeHardCards () {
 function resetScores () {
     document.getElementById("correct-matches").innerText = "0";
     document.getElementById("incorrect-matches").innerText = "0";
+    document.getElementById("moves").innerText = "0";
+    document.getElementById("accuracy").innerText = "0";
 
 }
 
@@ -188,8 +192,6 @@ function flipCard (event) {
 
 function checkMatch () {
 
-    console.log(clickedCards)
-
     let firstCard = clickedCards[0];
     let secondCard = clickedCards[1];
 
@@ -197,11 +199,14 @@ function checkMatch () {
         firstCard.classList.add("matched");
         secondCard.classList.add("matched");
         incrementCorrectMatches();
+        numberOfMoves();
+        accuracy();
         clickedCards = [];
     } else {
         setTimeout(noMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match
         clickedCards = [];
     };
+    gameWon();
 }
 
 function noMatch (firstCard, secondCard) {
@@ -212,6 +217,32 @@ function noMatch (firstCard, secondCard) {
         card.addEventListener("click", flipCard);
     };
     incrementIncorrectMatches();
+    numberOfMoves();
+    accuracy();
+}
+
+function gameWon () {
+    let gameArea = document.getElementsByClassName("game-card-area")[0];
+    let gameContainer = document.getElementsByClassName("inner-container")[0];
+    let winInfo = document.createElement('div');
+    winInfo.classList.add("win-info-container");
+    let movesCount = parseInt(document.getElementById("moves").innerText)
+    let correctMovesCount = parseInt(document.getElementById("correct-matches").innerText);
+    let accuracy = (correctMovesCount/movesCount) * 100;
+    winInfo.innerHTML = `
+    <h2>Congratulations! You have completed the Level</h2>
+    <h4>Here are your scores</h4>
+    <p>Number of moves: ${movesCount}</p>
+    <p>Number of Correct Matches: ${correctMovesCount}</p>
+    <p>Your accuracy % was: ${accuracy}</p>
+    `;
+
+    let cards = document.getElementsByClassName("game-card");
+    let unmatchedCards = $(cards).not('.matched');
+    if (unmatchedCards.length === 0) {
+        gameArea.remove(cards);
+        gameContainer.appendChild(winInfo);
+    };
 }
 
 function incrementCorrectMatches () {
@@ -225,9 +256,13 @@ function incrementIncorrectMatches () {
 }
 
 function numberOfMoves () {
-
+    let oldScore = parseInt(document.getElementById("moves").innerText);
+    document.getElementById("moves").innerText = ++oldScore;
 }
 
-function timeTaken () {
-
+function accuracy () {
+    let numberOfMoves = parseInt(document.getElementById("moves").innerText);
+    let correctMatches = parseInt(document.getElementById("correct-matches").innerText);
+    let accuracy = parseInt(document.getElementById("accuracy").innerText);
+    document.getElementById("accuracy").innerText = Math.round((correctMatches/numberOfMoves) * 100);
 }
