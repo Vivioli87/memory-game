@@ -52,6 +52,7 @@ function displayEasyLevel () {
 //removing cards functions called at start to remove any additional cards added by selecting other levels
 //reset scores
 function displayMediumLevel () {
+    displayEasyLevel();
     removeMedCards();
     removeHardCards();
     resetScores();
