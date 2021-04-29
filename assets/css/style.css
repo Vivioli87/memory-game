@@ -202,6 +202,7 @@ button.btn.btn-secondary.active-level{
     transform: rotateY(180deg);
 }
 
+/*hide cards when matched*/
 .game-card.matched{
     visibility: hidden;
     transition: 1s;

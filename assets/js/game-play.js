@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
     for (let button of buttons) {
         button.addEventListener("click", function() {
             let difficultyLevel = this.getAttribute("data-level");
-            this.classList.add("active-level")
+            this.classList.add("active-level");
             runGame(difficultyLevel);
         })
     }
@@ -29,6 +29,8 @@ function runGame(difficultyLevel) {
         displayHardLevel();
     };
 }
+
+
 //removing cards functions called at start to remove any additional cards added by selecting other levels
 //reset scores
 function displayEasyLevel () {
@@ -48,6 +50,8 @@ function displayEasyLevel () {
 // timeout set to reload cards first then shuffle if difficulty changed mid game
     setTimeout(shuffleCards, 500);
 }
+
+
 // adds 4 new cards to play with 
 //removing cards functions called at start to remove any additional cards added by selecting other levels
 //reset scores
@@ -100,6 +104,8 @@ function displayMediumLevel () {
     };
     setTimeout(shuffleCards, 500);
 }
+
+
 // adds the 4 cards from medium level and 4 extra cards
 //reset scores
 function displayHardLevel () {
@@ -150,6 +156,7 @@ function displayHardLevel () {
     setTimeout(shuffleCards, 500);
 }
 
+//removes medium level cards from play
 function removeMedCards () {
     let medCards = document.getElementsByClassName("medium-level");
     while (medCards.length > 0) {
@@ -157,6 +164,7 @@ function removeMedCards () {
     };
 }
 
+//removes hard level cards from play
 function removeHardCards () {
     let hardCards = document.getElementsByClassName("hard-level");
     while (hardCards.length > 0) {
@@ -164,6 +172,7 @@ function removeHardCards () {
     };
 }
 
+//resets scores with new games
 function resetScores () {
     document.getElementById("correct-matches").innerText = "0";
     document.getElementById("incorrect-matches").innerText = "0";
@@ -172,8 +181,8 @@ function resetScores () {
 
 }
 
-//assigns random order to cards
 
+//assigns random order to cards/shuffles cards
 function shuffleCards() {
     let cards = document.getElementsByClassName("game-card");
 
@@ -183,6 +192,7 @@ function shuffleCards() {
     };
 }
 
+//flips the card when clicked and adds to clicked cards array to check if match
 function flipCard (event) {
 
     this.classList.add("flip");
@@ -191,7 +201,7 @@ function flipCard (event) {
     checkMatch();
 }
 
-
+//checks if the 2 cards selected match based on data-succulent attribute
 function checkMatch () {
 
     let firstCard = clickedCards[0];
@@ -275,6 +285,8 @@ function gameWon () {
     };
 }
 
+
+//functions to increase/calculate scores based on moves taken
 function incrementCorrectMatches () {
     let oldScore = parseInt(document.getElementById("correct-matches").innerText);
     document.getElementById("correct-matches").innerText = ++oldScore;
