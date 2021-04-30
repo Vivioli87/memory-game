@@ -181,29 +181,42 @@ button.btn.btn-secondary.active-level{
 }
 
 .game-card{
-    background-color: #31315b;
     height: 175px;
     width: 125px;
     margin: 5px;
     border-radius: 5px;
     overflow: hidden;
-    border: 5px double #31315b;
-    box-shadow: 5px 5px 18px #31315b;
     position: relative;
-    transition: transform 0.8s;
     transform-style: preserve-3d;
     display: flex;
     align-items: center;
     justify-content: center;
+    perspective: 500;
+    -webkit-perspective:500;
+    -moz-perspective:500;
+    -ms-perspective:500;
+    -o-perspective:500;
 }
 
 .game-card.easy-level.inactive, .game-card.medium-level.inactive, .game-card.hard-level.inactive{
     visibility: hidden;
 }
 
-.game-card.flip{
+.card-front{
     transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
 }
+
+.game-card.flip > .card-back, .game-card.flip > .card-front{
+    transform: rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
+    -moz-transform:rotateY(360deg);
+    -ms-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+} 
 
 /*hide cards when matched*/
 .game-card.matched{
@@ -213,11 +226,21 @@ button.btn.btn-secondary.active-level{
 
 .card-back, .card-front{
     position: absolute;
+    overflow: hidden;
     height: 175px;
     width: 125px;
     border-radius: 5px;
-    background-color: rgb(210, 227, 196, 0.2);
+    border: 5px solid #31315b;
     backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    transition: transform 0.8s;
+    -webkit-transition:-webkit-transform 0.8s;
+    -moz-transition: -moz-transform 0.8s;
+    -o-transition: -o-transform 0.8s;
+
 }
 .card-back{
     z-index: 3;
@@ -227,11 +250,10 @@ button.btn.btn-secondary.active-level{
     z-index: 0;
 }
 
-
 h3.text-overlay {
     position: absolute;
     top: 80px;
-    left: 62px;
+    left: 58px;
     transform: translate(-50%, -50%);
     color: #31315b;
     z-index: 2;
@@ -296,7 +318,7 @@ h3.text-overlay {
     h3.text-overlay {
         font-size: 110%;
         top: 70px;
-        left: 50px;
+        left: 46px;
         padding: 10px;
     }
 }
@@ -322,7 +344,7 @@ h3.text-overlay {
     h3.text-overlay {
       font-size: 100%;
       top: 60px;
-      left: 45px;
+      left: 40px;
       padding: 10px;
       position: absolute;
     }
@@ -357,7 +379,7 @@ h3.text-overlay {
       h3.text-overlay {
         font-size: 100%;
         top: 60px;
-        left: 45px;
+        left: 40px;
     }
 }
 
@@ -381,7 +403,7 @@ h3.text-overlay {
       h3.text-overlay {
         font-size: 110%;
         top: 65px;
-        left: 50px;
+        left: 45px;
         padding: 10px;
     }
 }
