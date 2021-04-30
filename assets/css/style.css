@@ -134,7 +134,6 @@ h1, h2, h3, h4{
 /*Game page*/
 
 section.inner-container{
-    background: cover;
     height: fit-content;
     text-align: center;
     background-color: rgb(166, 172, 194, 0.8)
@@ -196,11 +195,11 @@ button.btn.btn-secondary.active-level{
     display: flex;
     align-items: center;
     justify-content: center;
-    perspective: 500;
-    -webkit-perspective:500;
-    -moz-perspective:500;
-    -ms-perspective:500;
-    -o-perspective:500;
+    perspective: 500px;
+    -webkit-perspective:500px;
+    -moz-perspective:500px;
+    -ms-perspective:500px;
+    -o-perspective:500px;
 }
 
 .game-card.easy-level.inactive, .game-card.medium-level.inactive, .game-card.hard-level.inactive{

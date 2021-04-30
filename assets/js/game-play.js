@@ -234,7 +234,7 @@ function checkMatch () {
         clickedCards = [];
         setTimeout(unlockBoard, 1000);
     } else {
-        setTimeout(noMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match
+        setTimeout(noMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match before unflipping
         clickedCards = [];
     };
 
@@ -278,12 +278,14 @@ function unlockBoard() {
 function gameWon () {
     let gameContainer = document.getElementsByClassName("inner-container")[0];
     let winInfo = document.createElement('div');
+    let moves = parseInt(document.getElementById("moves").innerText);
     let accuracy = parseInt(document.getElementById("accuracy").innerText);
     let winSound = new Audio('./assets/sounds/Small-crowd-clapping.mp3');
     winInfo.classList.add("win-info-container");
     winInfo.innerHTML = `
     <h2>Congratulations! </h2>
     <h4>You have completed this Level</h4>
+    <p>You took ${moves} moves to complete this level</p>
     <p>Your accuracy was: ${accuracy}%</p>
     <button onclick="document.location='game.html'" class="game-page-button">Click to play again!</button>
     `;
