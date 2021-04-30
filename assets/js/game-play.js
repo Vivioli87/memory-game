@@ -11,13 +11,23 @@ document.addEventListener("DOMContentLoaded", function(){
     for (let button of buttons) {
         button.addEventListener("click", function() {
             let difficultyLevel = this.getAttribute("data-level");
+            resetButtons();
             this.classList.add("active-level");
             runGame(difficultyLevel);
-        })
+        });
     }
     //default game to load on page load
     runGame("easy");
 })
+
+//wrote separate function as removing 'active-level' class in above function wouldn't work
+function resetButtons () {
+    let buttons = document.getElementsByClassName("btn-secondary");
+
+    for (let button of buttons) {
+        button.classList.remove("active-level");
+    };
+}
 
 function runGame(difficultyLevel) {
 
@@ -180,7 +190,6 @@ function resetScores () {
     document.getElementById("accuracy").innerText = "0";
 
 }
-
 
 //assigns random order to cards/shuffles cards
 function shuffleCards() {
