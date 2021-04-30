@@ -177,6 +177,7 @@ button.btn.btn-secondary.active-level{
     grid-template-columns: repeat(4, 150px);
     grid-gap: 10px;
     justify-content: center;
+    justify-items: center;
 }
 
 .game-card{
@@ -191,6 +192,8 @@ button.btn.btn-secondary.active-level{
     position: relative;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -228,15 +231,16 @@ button.btn.btn-secondary.active-level{
 h3.text-overlay {
     position: absolute;
     top: 80px;
-    left: 60px;
+    left: 62px;
     transform: translate(-50%, -50%);
     color: #31315b;
     z-index: 2;
     border: 5px solid #31315b;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
     border-radius: 50%;
+    font-size: 1.5rem;
 }
 
 
@@ -284,16 +288,16 @@ h3.text-overlay {
     margin: 5px;
     }
 
-    .card-back, .card-front{
+    .card-back, .card-front, .card-front > img{
     height: 150px;
     width: 100px;
     }
 
     h3.text-overlay {
-        font-size: 140%;
+        font-size: 110%;
         top: 70px;
-        left: 45px;
-        padding: 15px;
+        left: 50px;
+        padding: 10px;
     }
 }
 
@@ -310,7 +314,7 @@ h3.text-overlay {
     margin: 5px;
     }
 
-    .card-back, .card-front{
+    .card-back, .card-front, .card-front > img{
     height: 130px;
     width: 90px;
     }
@@ -318,8 +322,9 @@ h3.text-overlay {
     h3.text-overlay {
       font-size: 100%;
       top: 60px;
-      left: 40px;
+      left: 45px;
       padding: 10px;
+      position: absolute;
     }
 
     .game-info-area{
@@ -344,7 +349,7 @@ h3.text-overlay {
     margin: 5px;
     }
 
-    .card-back, .card-front{
+    .card-back, .card-front, .card-front > img{
     height: 130px;
     width: 90px;
     }
@@ -352,7 +357,7 @@ h3.text-overlay {
       h3.text-overlay {
         font-size: 100%;
         top: 60px;
-        left: 40px;
+        left: 45px;
     }
 }
 
@@ -368,15 +373,15 @@ h3.text-overlay {
     margin: 5px;
     }
 
-    .card-back, .card-front{
+    .card-back, .card-front, .card-front > img{
     height: 150px;
     width: 100px;
     }
 
       h3.text-overlay {
-        font-size: 100%;
+        font-size: 110%;
         top: 65px;
-        left: 45px;
-        padding: 15px;
+        left: 50px;
+        padding: 10px;
     }
 }
