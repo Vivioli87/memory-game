@@ -274,7 +274,7 @@ function gameWon () {
     winInfo.innerHTML = `
     <h2>Congratulations! </h2>
     <h4>You have completed the Level</h4>
-    <button onclick="document.location='game.html'" class="home-page-button">Click to play again!</button>
+    <button onclick="document.location='game.html'" class="game-page-button">Click to play again!</button>
     `;
 
     let cards = document.getElementsByClassName("game-card");

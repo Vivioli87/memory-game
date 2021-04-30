@@ -280,6 +280,16 @@ h3.text-overlay {
     border: 2px groove #31315b;
 }
 
+.win-info-container .game-page-button{
+    border: 2px groove #31315b;
+    margin: 10px 20px 0;
+    color: rgb(166, 172, 194);
+    font-weight: 800;
+    background-color: #31315b;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 /*media queries for game page */
 
 @media only screen and (max-width: 990px) {
