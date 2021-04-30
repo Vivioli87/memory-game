@@ -270,6 +270,7 @@ function gameWon () {
     let gameContainer = document.getElementsByClassName("inner-container")[0];
     let winInfo = document.createElement('div');
     let accuracy = parseInt(document.getElementById("accuracy").innerText);
+    let winSound = new Audio('./assets/sounds/Small-crowd-clapping.mp3');
     winInfo.classList.add("win-info-container");
     winInfo.innerHTML = `
     <h2>Congratulations! </h2>
@@ -283,6 +284,7 @@ function gameWon () {
     if (unmatchedCards.length === 0) {
         gameContainer.innerHTML = "";
         gameContainer.appendChild(winInfo);
+        winSound.play();
     };
 }
 
