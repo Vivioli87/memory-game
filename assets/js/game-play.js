@@ -267,24 +267,24 @@ function unlockBoard() {
 //reveals 'Congratulations message' when all cards have been matched.
 
 function gameWon () {
-    let gameArea = document.getElementsByClassName("game-card-area")[0];
     let gameContainer = document.getElementsByClassName("inner-container")[0];
     let winInfo = document.createElement('div');
+    let accuracy = parseInt(document.getElementById("accuracy").innerText);
     winInfo.classList.add("win-info-container");
     winInfo.innerHTML = `
     <h2>Congratulations! </h2>
-    <h4>You have completed the Level</h4>
+    <h4>You have completed this Level</h4>
+    <p>Your accuracy was: ${accuracy}%</p>
     <button onclick="document.location='game.html'" class="game-page-button">Click to play again!</button>
     `;
 
     let cards = document.getElementsByClassName("game-card");
     let unmatchedCards = $(cards).not('.matched');
     if (unmatchedCards.length === 0) {
-        gameArea.remove(cards);
+        gameContainer.innerHTML = "";
         gameContainer.appendChild(winInfo);
     };
 }
-
 
 //functions to increase/calculate scores based on moves taken
 function incrementCorrectMatches () {
