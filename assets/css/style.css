@@ -176,7 +176,11 @@ button.btn.btn-secondary.active-level{
     margin-bottom: 25px;
 }
 
-.game-card-area {
+.demo-container {
+    margin-bottom: 15px;
+}
+
+.game-card-area, .demo-container {
     display: grid;
     grid-template-columns: repeat(4, 150px);
     grid-gap: 10px;
@@ -223,7 +227,7 @@ button.btn.btn-secondary.active-level{
 } 
 
 /*hide cards when matched*/
-.game-card.matched{
+.game-card.matched {
     visibility: hidden;
     transition: 1s;
 }
