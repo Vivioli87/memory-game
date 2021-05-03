@@ -53,13 +53,14 @@ The user types for this website would be fans (old and new), key people within t
 ### Visitor Stories
 1. As a site visitor, I would like to have fun playing a simple memory game.
 2. As a site visitor, I would like to have a brief overview of the rules before playing.
-3. As a site visitor, I would like to be able to play different levels.
-4. As a site visitor, I would like to be able to see how long each game took and how many moves were made.
-5. As a site visitor, I would like to be able to view the top scores/scorers on each level.
-6. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
-7. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.
-8. As a site visitor, I would like a the game website to be easily navigable and have sleek design, that is responsive on different devices.
-9. As a site visitor, I want the imagery and colors to be eye-catching that make me want to learn more about succulent plants.
+3. As a site visitor, I would like to be able to try a tutorial or demo before attempting a real game.
+4. As a site visitor, I would like to be able to play different levels.
+5. As a site visitor, I would like to be able to see how long each game took, how many moves were made and how accurate I was.
+6. As a site visitor, I would like to be able to view the top scores/scorers on each level.
+7. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
+8. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.
+9. As a site visitor, I would like a the game website to be easily navigable and have sleek design, that is responsive on different devices.
+10. As a site visitor, I want the imagery and colors to be eye-catching that make me want to learn more about succulent plants.
 
 
 ### Business Stories
@@ -165,6 +166,7 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
 - Home page 
     - Brief introduction to the user about the game and my project.
     - How to play instructions
+    - Small demo/tutorial to aid users to learn how to play the game.
 - Game page
     - The buttons for difficulty levels are responsive.
     - The difficulty levels can be clicked and changed at any time to bring up a new game with the cards re-shuffled.
@@ -272,14 +274,7 @@ Then follow these steps:
 
 ## Credits
 
-
-
-### Content
-
-
 ### Code
-
--
 
 - There are a few sources I used as reference to learn how to make the 'flip' cards interactivity function correctly.
     - [w3schools reference](https://www.w3schools.com/howto/howto_css_flip_card.asp?fbclid=IwAR1HoWYWqjkVCgnD2z2zrqbAkkbCK3XW68m8RCO2jmuyQMy9y5L3uXgCx-8)
