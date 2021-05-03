@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function(){
     for (let dCard of dCards) {
         dCard.addEventListener("click", flipDemo);
     };
+
+    let resetButton = document.getElementById("demo");
+    resetButton.addEventListener("click", demoReset);
 })
 
 
@@ -63,5 +66,14 @@ function unlockDBoard() {
 
     for (let dCard of dCards) {
       dCard.addEventListener("click", flipDemo);
+    };
+}
+
+function demoReset() {
+
+    let dCards = document.getElementsByClassName("demo-card");
+
+    for (let dCard of dCards) {
+      dCard.classList.remove("matched", "flip");
     };
 }
