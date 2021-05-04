@@ -198,7 +198,7 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) was used as the main language to complete the structure of the website.
 - [CSS3](https://en.wikipedia.org/wiki/CSS) was used to style the website.
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used within bootstrap and embedded code functionality
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for responsive aspects within bootstrap but also my own JavaScript code to add interactivity to the game play.
 - [Markdown](https://en.wikipedia.org/wiki/Markdown) - used for the readme documnetation.
 
 ### Frameworks, Libraries and Tools
@@ -225,6 +225,7 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
 
 - [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) was used for Markup validation.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used for CSS code validation.
+- [jshint.com](https://jshint.com/) was used to check JS code.
 
 See further inforation on results found during validation on the separate [testing document]().
 
