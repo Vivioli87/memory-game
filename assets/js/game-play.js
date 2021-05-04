@@ -2,6 +2,8 @@
 
 let clickedCards = [];
 
+// timer variables
+let startTime, endTime;
 
 // wait for the DOM to load before running game.
 
@@ -287,20 +289,22 @@ function gameWon () {
     let moves = parseInt(document.getElementById("moves").innerText);
     let accuracy = parseInt(document.getElementById("accuracy").innerText);
     let winSound = new Audio('./assets/sounds/Small-crowd-clapping.mp3');
+
     winInfo.classList.add("win-info-container");
     winInfo.innerHTML = `
     <h2>Congratulations! </h2>
     <h4>You have completed this Level</h4>
-    <p>You took ${moves} moves to complete this level</p>
+    <p>You took ${moves} moves to complete this level in <span id="time-taken">0</span> seconds. </p>
     <p>Your accuracy was: ${accuracy}%</p>
     <button onclick="document.location='game.html'" class="game-page-button">Click to play again!</button>
     `;
 
     let cards = document.getElementsByClassName("game-card");
-  let unmatchedCards = $(cards).not('.matched');
+    let unmatchedCards = $(cards).not('.matched');
     if (unmatchedCards.length === 0) {
         gameContainer.innerHTML = "";
         gameContainer.appendChild(winInfo);
+        end();
         winSound.play();
     }
 }
@@ -326,3 +330,25 @@ function accuracy () {
     let correctMatches = parseInt(document.getElementById("correct-matches").innerText);
     document.getElementById("accuracy").innerText = Math.round((correctMatches/numberOfMoves) * 100);
 }
+
+// to calculate time taken per game
+
+function start() {
+    startTime = performance.now();
+};
+
+function end() {
+    endTime = performance.now();
+    let timeDiff = endTime - startTime; //in ms 
+    // strip the ms 
+    timeDiff /= 1000; 
+        
+    // get seconds 
+    let seconds = Math.round(timeDiff);
+    
+    //updates time taken section in win message
+    let timeTaken = document.getElementById("time-taken");
+    timeTaken.innerText = seconds;
+
+    };
+
