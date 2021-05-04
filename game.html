@@ -37,9 +37,25 @@
             <h2>Play Succulent Match...</h2>
             <h4>Choose your difficulty level:</h4>
             <div class="btn-group container" role="group" aria-label="difficulty levels">
-                <button class="btn btn-secondary active-level" data-level="easy">Easy</button>
-                <button class="btn btn-secondary" data-level="medium">Medium</button>
-                <button class="btn btn-secondary" data-level="hard">Hard</button>
+                <button class="btn btn-secondary" data-level="easy"  data-toggle="modal" data-target="#startModal">Easy</button>
+                <button class="btn btn-secondary" data-level="medium" data-toggle="modal" data-target="#startModal">Medium</button>
+                <button class="btn btn-secondary" data-level="hard" data-toggle="modal" data-target="#startModal">Hard</button>
+                <div class="modal" id="startModal" tabindex="-1" aria-labelledby="startModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"><span id="level-chosen">Easy</span> level chosen...</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Your time starts when you click the button below</p>
+                            <p><em>Note: You can choose a different level at any point</em></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="start-button" class="btn btn-primary" data-dismiss="modal">Start the game!</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>  
             </div>
              <!--where cards will be dealt-->
             <div class="game-card-area">

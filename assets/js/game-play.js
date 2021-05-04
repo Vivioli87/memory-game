@@ -2,6 +2,7 @@
 
 let clickedCards = [];
 
+
 // wait for the DOM to load before running game.
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -16,8 +17,10 @@ document.addEventListener("DOMContentLoaded", function(){
             runGame(difficultyLevel);
         });
     }
-    //default game to load on page load
-    runGame("easy");
+
+
+    //default game to load on page load - removed to ensure the modal works on level chosen.
+   //runGame("easy");
 });
 
 //wrote separate function as removing 'active-level' class in above function wouldn't work
@@ -30,6 +33,9 @@ function resetButtons () {
 }
 
 function runGame(difficultyLevel) {
+
+    let levelChosen = document.getElementById("level-chosen");
+    levelChosen.innerHTML = `${difficultyLevel}`;
 
     if (difficultyLevel === "easy") {
         displayEasyLevel();
