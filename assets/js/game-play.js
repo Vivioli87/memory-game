@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     //default game to load on page load
     runGame("easy");
-})
+});
 
 //wrote separate function as removing 'active-level' class in above function wouldn't work
 function resetButtons () {
@@ -26,7 +26,7 @@ function resetButtons () {
 
     for (let button of buttons) {
         button.classList.remove("active-level");
-    };
+    }
 }
 
 function runGame(difficultyLevel) {
@@ -37,7 +37,7 @@ function runGame(difficultyLevel) {
         displayMediumLevel();
     } else {
         displayHardLevel();
-    };
+    }
 }
 
 
@@ -55,8 +55,8 @@ function displayEasyLevel () {
        card.addEventListener("click", flipCard);
        if (card.classList.contains("easy-level")) {
            card.classList.remove("inactive", "matched", "flip");
-       };
-    };
+       }
+    }
 // timeout set to reload cards first then shuffle if difficulty changed mid game
     setTimeout(shuffleCards, 500);
 }
@@ -110,8 +110,8 @@ function displayMediumLevel () {
        card.addEventListener("click", flipCard);
         if (card.classList.contains("medium-level")) {
            card.classList.remove("inactive", "matched", "flip");
-       };
-    };
+       }
+    }
     setTimeout(shuffleCards, 500);
 }
 
@@ -161,8 +161,8 @@ function displayHardLevel () {
        card.addEventListener("click", flipCard);
        if (card.classList.contains("hard-level")) {
            card.classList.remove("inactive", "matched", "flip");
-       };
-    };
+       }
+    }
     setTimeout(shuffleCards, 500);
 }
 
@@ -171,7 +171,7 @@ function removeMedCards () {
     let medCards = document.getElementsByClassName("medium-level");
     while (medCards.length > 0) {
         medCards[0].parentNode.removeChild(medCards[0]);
-    };
+    }
 }
 
 //removes hard level cards from play
@@ -179,7 +179,7 @@ function removeHardCards () {
     let hardCards = document.getElementsByClassName("hard-level");
     while (hardCards.length > 0) {
         hardCards[0].parentNode.removeChild(hardCards[0]);
-    };
+    }
 }
 
 //resets scores with new games
@@ -198,7 +198,7 @@ function shuffleCards() {
     for (let card of cards) {
         let randomPos = Math.floor(Math.random() * 12);
         card.style.order = randomPos;
-    };
+    }
 }
 
 //flips the card when clicked and adds to clicked cards array to check if match
@@ -223,7 +223,7 @@ function checkMatch () {
 
     if (clickedCards.length === 2) {
         lockBoard();
-    };
+    }
 
     if (firstCard.dataset.succulent === secondCard.dataset.succulent) {
         firstCard.classList.add("matched");
@@ -236,7 +236,7 @@ function checkMatch () {
     } else {
         setTimeout(noMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match before unflipping
         clickedCards = [];
-    };
+    }
 
     gameWon();
 }
@@ -249,7 +249,7 @@ function noMatch (firstCard, secondCard) {
     for (let card of cards) {
         card.classList.remove("flip");
         card.addEventListener("click", flipCard);
-    };
+    }
     incrementIncorrectMatches();
     numberOfMoves();
     accuracy();
@@ -262,7 +262,7 @@ function lockBoard() {
 
     for (let card of cards) {
         card.removeEventListener("click", flipCard);
-    };
+    }
 }
 
 function unlockBoard() {
@@ -270,7 +270,7 @@ function unlockBoard() {
 
     for (let card of cards) {
         card.addEventListener("click", flipCard);
-    };
+    }
 }
 
 //reveals 'Congratulations message' when all cards have been matched.
@@ -291,12 +291,12 @@ function gameWon () {
     `;
 
     let cards = document.getElementsByClassName("game-card");
-    let unmatchedCards = $(cards).not('.matched');
+  let unmatchedCards = $(cards).not('.matched');
     if (unmatchedCards.length === 0) {
         gameContainer.innerHTML = "";
         gameContainer.appendChild(winInfo);
         winSound.play();
-    };
+    }
 }
 
 //functions to increase/calculate scores based on moves taken
@@ -318,6 +318,5 @@ function numberOfMoves () {
 function accuracy () {
     let numberOfMoves = parseInt(document.getElementById("moves").innerText);
     let correctMatches = parseInt(document.getElementById("correct-matches").innerText);
-    let accuracy = parseInt(document.getElementById("accuracy").innerText);
     document.getElementById("accuracy").innerText = Math.round((correctMatches/numberOfMoves) * 100);
 }

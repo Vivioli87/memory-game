@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
     for (let dCard of dCards) {
         dCard.addEventListener("click", flipDemo);
-    };
+    }
 
     let resetButton = document.getElementById("demo");
     resetButton.addEventListener("click", demoReset);
-})
+});
 
 
 function flipDemo (event) {
@@ -31,7 +31,7 @@ function demoMatch() {
 
     if (dCards.length === 2) {
        lockDBoard();
-    };
+    }
 
     if (firstDCard.dataset.succulent === secondDCard.dataset.succulent) {
         firstDCard.classList.add("matched");
@@ -41,7 +41,7 @@ function demoMatch() {
     } else {
         setTimeout(noDMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match before unflipping
         dCards = [];
-    };
+    }
 }
 
 function noDMatch (firstDCard, secondDCard) {
@@ -50,7 +50,7 @@ function noDMatch (firstDCard, secondDCard) {
     for (let dCard of dCards) {
         dCard.classList.remove("flip");
         dCard.addEventListener("click", flipDemo);
-    };
+    }
 }
 
 function lockDBoard() {
@@ -58,7 +58,7 @@ function lockDBoard() {
 
     for (let dCard of dCards) {
        dCard.removeEventListener("click", flipDemo);
-    };
+    }
 }
 
 function unlockDBoard() {
@@ -66,7 +66,7 @@ function unlockDBoard() {
 
     for (let dCard of dCards) {
       dCard.addEventListener("click", flipDemo);
-    };
+    }
 }
 
 function demoReset() {
@@ -75,5 +75,5 @@ function demoReset() {
 
     for (let dCard of dCards) {
       dCard.classList.remove("matched", "flip");
-    };
+    }
 }
