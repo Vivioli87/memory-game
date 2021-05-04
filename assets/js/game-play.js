@@ -218,24 +218,24 @@ function checkMatch () {
 
     //stops the same card being clicked twice/double clicked and matched
 
-    firstCard.removeEventListener("click", flipCard);
-    secondCard.removeEventListener("click", flipCard);
+    firstCard.removeEventListener("click", flipCard); 
 
     if (clickedCards.length === 2) {
+        secondCard.removeEventListener("click", flipCard);
         lockBoard();
-    }
 
-    if (firstCard.dataset.succulent === secondCard.dataset.succulent) {
-        firstCard.classList.add("matched");
-        secondCard.classList.add("matched");
-        incrementCorrectMatches();
-        numberOfMoves();
-        accuracy();
-        clickedCards = [];
-        setTimeout(unlockBoard, 1000);
-    } else {
-        setTimeout(noMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match before unflipping
-        clickedCards = [];
+        if (firstCard.dataset.succulent === secondCard.dataset.succulent) {
+            firstCard.classList.add("matched");
+            secondCard.classList.add("matched");
+            incrementCorrectMatches();
+            numberOfMoves();
+            accuracy();
+            clickedCards = [];
+            setTimeout(unlockBoard, 1000);
+        } else {
+            setTimeout(noMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match before unflipping
+            clickedCards = [];
+        };
     }
 
     gameWon();
