@@ -215,9 +215,17 @@ button.btn.btn-secondary.active-level{
     margin-bottom: 15px;
 }
 
-.game-card-area, .demo-container {
+.game-card-area {
     display: grid;
     grid-template-columns: repeat(4, 150px);
+    grid-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.demo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
     grid-gap: 10px;
     justify-content: center;
     justify-items: center;
@@ -348,8 +356,13 @@ h3.text-overlay {
 
 
 @media only screen and (max-width: 720px) {
-  .game-card-area, .demo-container {
+  .game-card-area {
     grid-template-columns: repeat(4, 120px);
+    grid-gap: 10px;
+  }
+
+  .demo-container {
+    grid-template-columns: repeat(3, 120px);
     grid-gap: 10px;
   }
 
@@ -374,15 +387,9 @@ h3.text-overlay {
 
 
 @media only screen and (max-width: 600px) {
-  .game-card-area {
+  .game-card-area, .demo-container {
     grid-template-columns: repeat(3, 120px);
     grid-gap: 5px;
-  }
-
-  .demo-container{
-       grid-template-columns: repeat(2, 150px);
-    grid-gap: 5px;
-
   }
 
   .game-card{
