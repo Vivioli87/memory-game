@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let resetButton = document.getElementById("demo");
     resetButton.addEventListener("click", demoReset);
 
-    shuffleDCards();
+    setTimeout(shuffleDCards, 200);
 
 });
 
@@ -46,10 +46,10 @@ function demoMatch() {
         lockDBoard();
 
         if (firstDCard.dataset.succulent === secondDCard.dataset.succulent) {
-        firstDCard.classList.add("matched");
-        secondDCard.classList.add("matched");
-        dCards = [];
-        setTimeout(unlockDBoard, 1000);
+            firstDCard.classList.add("matched");
+            secondDCard.classList.add("matched");
+            dCards = [];
+            setTimeout(unlockDBoard, 1000);
         } else {
             setTimeout(noDMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match before unflipping
             dCards = [];
@@ -89,5 +89,6 @@ function demoReset() {
     for (let dCard of dCards) {
       dCard.classList.remove("matched", "flip");
     }
+    setTimeout(shuffleDCards, 200);
 }
 
