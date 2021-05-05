@@ -185,6 +185,11 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
 
 ### Future Implemenatation
 
+- A top scores/scorers feature as per initial Wireframe. Attempted but left out of this implementation due to knowledge and time constraints. However the idea was to have:
+    - a form on game completion that appears if the score/elapsed time was better than the scores already on the leaderboards.
+        - The form would capture the name of the user and on submit would put the user's name and time in the appropriate position on the leaderboard.
+    - code to check for each level the new time elapsed against already stored times on the leaderboard (real or placeholder).
+         
 - A 3rd page as per initial Wireframe as a space to give more information about Succulents, including:
     - More specified information of the different succulent varieties, especially those used in the game.
     - General care tips and advice for novice plant owners.
@@ -215,7 +220,7 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
 - [Techsini](https://techsini.com/multi-mockup/) was used to create the responsive mockup image.
 - [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
 - [W3C Spell checker](https://www.w3.org/2002/01/spellchecker) was used to check the spelling of the webpage.
-- [Cloudinary](https://cloudinary.com/) used to transform image formats to webp and to host the pictures in order to improve performance scores on Lighthouse audit.
+- [Cloudinary](https://cloudinary.com/) used host the pictures in order to improve performance scores on Lighthouse audit.
 - [Markdown guide](https://www.markdownguide.org/basic-syntax/)
 - [Unsplash](https://unsplash.com/) - images library
 - [Pexels website](https://www.pexels.com/) - images library
@@ -227,7 +232,7 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used for CSS code validation.
 - [jshint.com](https://jshint.com/) was used to check JS code.
 
-See further inforation on results found during validation on the separate [testing document]().
+See further information on results found during validation on the separate [testing document]().
 
 [Back to table of contents](#table-of-contents)
 
