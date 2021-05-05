@@ -85,11 +85,11 @@ function displayMediumLevel () {
     medCard1.setAttribute("data-succulent", "turquoise");
     medCard1.innerHTML = `
         <div class="card-back">
-            <img src="./assets/Images/card-cover2.jpg" alt="back of card">
+            <img src="https://res.cloudinary.com/vivioli87/image/upload/c_scale,w_125/v1620255042/Succulent%20game/pexels-maureen-bekker-1207978_k3xzr8.jpg" alt="back of card">
             <h3 class="text-overlay">Succulent Match</h3>
         </div>
         <div class="card-front">
-            <img src="./assets/Images/erol-ahmed-aIYFR0vbADk-unsplash-resized.jpg" alt="turquoise succulent">
+            <img src="https://res.cloudinary.com/vivioli87/image/upload/c_scale,w_125/v1620254916/Succulent%20game/erol-ahmed-aIYFR0vbADk-unsplash_gfptyc.jpg" alt="turquoise succulent">
         </div>
         `;
     let medCard1Clone = medCard1.cloneNode(true);
@@ -98,11 +98,11 @@ function displayMediumLevel () {
     medCard2.setAttribute("data-succulent", "aloe");
     medCard2.innerHTML = `
         <div class="card-back">
-            <img src="./assets/Images/card-cover2.jpg" alt="back of card">
+            <img src="https://res.cloudinary.com/vivioli87/image/upload/c_scale,w_125/v1620255042/Succulent%20game/pexels-maureen-bekker-1207978_k3xzr8.jpg" alt="back of card">
             <h3 class="text-overlay">Succulent Match</h3>
         </div>
         <div class="card-front">
-            <img src="./assets/Images/jude-smart-lE6z79guKI0-unsplash-resized.jpg" alt="aloe succulent">
+            <img src="https://res.cloudinary.com/vivioli87/image/upload/c_scale,w_125/v1620255699/Succulent%20game/jude-smart-lE6z79guKI0-unsplash_amjgkv.jpg" alt="aloe succulent">
         </div>
         `;
     let medCard2Clone = medCard2.cloneNode(true);
@@ -135,11 +135,11 @@ function displayHardLevel () {
     hardCard1.setAttribute("data-succulent", "jellybean");
     hardCard1.innerHTML = `
         <div class="card-back">
-            <img src="./assets/Images/card-cover2.jpg" alt="back of card">
+            <img src="https://res.cloudinary.com/vivioli87/image/upload/c_scale,w_125/v1620255042/Succulent%20game/pexels-maureen-bekker-1207978_k3xzr8.jpg" alt="back of card">
             <h3 class="text-overlay">Succulent Match</h3>
         </div>
         <div class="card-front">
-            <img src="./assets/Images/michal-hlavac-i5drL-SLTmY-unsplash-re-sized.jpg" alt="jelly bean succulent">
+            <img src="https://res.cloudinary.com/vivioli87/image/upload/c_scale,w_125/v1620254957/Succulent%20game/michal-hlavac-i5drL-SLTmY-unsplash_bfcxev.jpg" alt="jelly bean succulent">
         </div>
         `;
     let hardCard1Clone = hardCard1.cloneNode(true);
@@ -148,11 +148,11 @@ function displayHardLevel () {
     hardCard2.setAttribute("data-succulent", "green");
     hardCard2.innerHTML = `
         <div class="card-back">
-            <img src="./assets/Images/card-cover2.jpg" alt="back of card">
+            <img src="https://res.cloudinary.com/vivioli87/image/upload/c_scale,w_125/v1620255042/Succulent%20game/pexels-maureen-bekker-1207978_k3xzr8.jpg" alt="back of card">
             <h3 class="text-overlay">Succulent Match</h3>
         </div>
         <div class="card-front">
-            <img src="./assets/Images/lily-li-QU_QqdKv-Uk-unsplash-resized.jpg" alt="green succulent">
+            <img src="https://res.cloudinary.com/vivioli87/image/upload/c_scale,w_125/v1620255021/Succulent%20game/lily-li-QU_QqdKv-Uk-unsplash_ed4dmd.jpg" alt="green succulent">
         </div>
         `;
     let hardCard2Clone = hardCard2.cloneNode(true);
