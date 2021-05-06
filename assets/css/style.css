@@ -2,8 +2,7 @@
 
 /*
 font-family: 'Lobster', cursive;
-font-family: 'Montserrat', sans-serif;  ------ need to find better 2nd font to match heading font
-*/
+font-family: 'Montserrat', sans-serif; */
 
 /*general*/
 *{
@@ -247,6 +246,11 @@ button.btn.btn-secondary.active-level{
     -moz-perspective:500px;
     -ms-perspective:500px;
     -o-perspective:500px;
+     backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
 }
 
 .game-card:hover{
