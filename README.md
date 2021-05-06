@@ -232,13 +232,13 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used for CSS code validation.
 - [jshint.com](https://jshint.com/) was used to check JS code.
 
-See further information on results found during validation on the separate [testing document]().
+See further information on results found during validation on the separate [testing document](https://github.com/Vivioli87/memory-game/blob/master/testing_readme.md).
 
 [Back to table of contents](#table-of-contents)
 
 ## Testing
 
-Testing process was written in a separate document [Testing document]()
+Testing process was written in a separate document [Testing document](https://github.com/Vivioli87/memory-game/blob/master/testing_readme.md)
 
 [Back to table of contents](#table-of-contents)
 

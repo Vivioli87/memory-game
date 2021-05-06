@@ -1,4 +1,4 @@
-# Mass Ctrlr - Band Website (Testing section)
+# Succulent Match - A memory game (Testing section)
 
 [Main README.md file](https://github.com/Vivioli87/memory-game/blob/master/README.md)  
 
@@ -17,7 +17,10 @@
 ### Visitor Stories
 
 1. As a site visitor, I would like to have fun playing a simple memory game.
-    - 
+    - The memory game is simple to use and is clearly set out how to play within the game instructions section on the home page.
+    - The game has different difficulties to provide more challenging scenarios and has game statistics to allow the user to compete with themselves.
+    - When each game is succussfully completed there is an applause sound to congratulate the user for finishing the level.
+    - The website is clearly laid out to allow the user to navigate around the site with ease.
 2. As a site visitor, I would like to have a brief overview of the rules before playing.
     - On the landing page, there is a game instructions section which outlines the rules of the game. 
     - There is also a small tutorial/demo to allow the user to get used to the game and how to interact with it before playing a full game.
@@ -37,10 +40,14 @@
     - Through playing the game, the user can see and appreciate the various succulent types and colours that exist.
 7. As a site visitor, I would like a the game website to be easily navigable and have sleek design, that is responsive on different devices.
     - The website is fully responsive for different devices.
+    - There is a navigation bar at the top of each page to allow users to access any page of the website at any time.
+    - There is a button within the game instructions section on the home page, which takes the user to the game page when they are ready to play also.
+    - Any external links are opened on a new tab so that the user isn't completely navigated away from the website.
 8. As a site visitor, I want the imagery and colors to be eye-catching that make me want to learn more about succulent plants.
     - The main colour used for the site is purple, in 2 contrasting shades. A darker purple for text, headings, links, borders and buttons to contrast against the softer pastel purple used for the backgrounds.
     - I also used a background image of succulents to show through the pastel, opaque purple to keep the succulent theme going through the website.
     - The same image used for the background was also used for the back of the cards.
+    - For the differenct succulent cards, i tried to find images that are eyecatching in their own way, that aren't too similar in colour and that convey how many varieties of succulents you can find.
 9. As a site visitor, I would like to be able to view the top scores/scorers on each level.
     - Not implemented for this deployment due to time and knowledge level, however is something that would be implemented for future deployments.
 10. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
@@ -49,17 +56,29 @@
 ### Business Stories
 
 1. As a site owner, I have the same goals as the external users. I would like to make a game that I would enjoy playing.
-    - 
+    - The memory game is simple to use and is clearly set out how to play within the game instructions section on the home page.
+    - The game has different difficulties to provide more challenging scenarios and has game statistics to allow the user to compete with themselves.
+    - When each game is succussfully completed there is an applause sound to congratulate the user for finishing the level.
+    - The website is clearly laid out to allow the user to navigate around the site with ease.
 2. As a site owner, I would like to make the game instructions simple to follow.
-    - 
+    - The game instructions section is clear and concise, with the aim of the game clearly defined.
+    - There is a tutorial/demo version of the game to get the user used to how to play and the interactivity with the cards before playing for real.
 3. As a site owner, I would like to make the game logical to follow and interact with, even without reading the instructions prior.
-    - 
+    - All links, buttons, and interactive elements (such as the game cards) have a pointer cursor when they are hovered over to prompt the user to click.
+    - The game cards can only be clicked in pairs, the cards are locked so a third cannot be clicked before the game can check if they match.
+    - The same game card can also not be clicked more than once in a move either.
+    - When the user finds a matching pair these are hidden to take them 'out of the game'.
+    - The game is generally simple to figure out and interact with without reading any instructions.
 3. As a site owner, I would like to provide a lot of interactivity within the game to provide information regarding the time taken, number of moves etc in order to produce 'top scores' and to provide a competitive element to the game.
-    - 
+    - Under the game area, there is a section which gives in game feedback to the user on how many moves they have made, how many correct and incorrect matches they have made and how accurate they have been.
+    - There is a hidden timer for the game also and the user finds out how long they took to complete the game in the finishing message.
+    - The top scores section will be a future implentation to the site as discussed in previous parts of this readme document.
 4. As a site owner, I would like to share my passion for succulent plants as well as advice (separate to the game) on how to care for them.
-    - 
+    - At the bottom of the home page I have included a section with online references on succulents: what they are, how to care for them and where to buy them.
+    - In the about the game section on the home page, I have talked about why I chose succulents as the theme of my game which will show my passion and hopefully spark the user's interest in them also.
 5. As a site owner, I would like to provide a google map service so users can look up their local garden centre/succulent stockist.
-    - 
+    - Not implemented for this deployment due to time and prioritising other aspects of the website, however is something that would be implemented for future deployments.
+    - However I have made reference to where users can buy/find succulents and also provided some links to buy them online.
 
 [Back to table of contents](#table-of-contents)
 
@@ -106,14 +125,13 @@ No errors for Game page.
         - only allowing 2 unique cards to be clicked in the one 'move'
         - what happens at the end of the game
         - game information updating or re-setting.
-
-    - Checked that all elements that have a 'hover' attribute to them such as footer links, button on contact page respond correctly.
+    - Checked that all elements that have a 'hover' attribute to them such as links, cards and buttons respond correctly.
 
 ### Browser Testing
 
 The website was tested on the following browser types. All browser versions were up to date.
 - **Google chrome** - best performance with all cookies allowed.
-- Windows Internet explorer
+- firefox
 - Safari
 - Samsung Internet
 - Google chrome for Android   
@@ -128,9 +146,14 @@ For all my media queries, I used the following page for help on [standard device
 The website was tested on the following devices:
 - desktop computer
 - Samsung Galaxy A70
-- Apple iPad
 
-The site has been tested on friend's devices also which include iphones however without overseeing the testing myself due to lockdown I have not included these in my testing document.
+The site has been tested on friend's devices also. These include:
+- Macbook pro
+- Samsung S8 / S21
+- iphone 7 / 11 / 12 / XR
+- Google3
+- Samsung tablet.
+
 
 I have tested other devices using the chrome developer tools including:
 - Moto G4
@@ -165,6 +188,7 @@ Using lighthouse on Google Chrome developer tools - reports generated
 
 ## Encountered Issues
 
+- During testing phase, my friends with iPhones reported a glitch when the cards flipped which would show half the back and half the front momentarily. This was an issue I had been unaware of due to not using apple products or the safari web browser. After playing around with the transormY css attributes for the game-card, card-front and card-back classes I found a fix that worked on both android and apple products.
 
 
 [Back to table of contents](#table-of-contents)
