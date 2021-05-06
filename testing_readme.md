@@ -19,15 +19,21 @@
 1. As a site visitor, I would like to have fun playing a simple memory game.
     - 
 2. As a site visitor, I would like to have a brief overview of the rules before playing.
-    - 
+    - On the landing page, there is a game instructions section which outlines the rules of the game. 
+    - There is also a small tutorial/demo to allow the user to get used to the game and how to interact with it before playing a full game.
 3. As a site visitor, I would like to be able to try a tutorial or demo before attempting a real game.
-    - 
+    - As above, as part of the game instructions section on the landing page there is a small tutorial/demo to allow the user to get used to the game and how to interact with it before playing a full game. 
+    - The tutorial can be easily re-set with the re-set button if the user wants more practice time.
 4. As a site visitor, I would like to be able to play different levels.
-    - 
+    - On the game page the user can choose between easy, medium and hard difficulty levels. Easy has 12 cards (6 pairs), Medium has 16 cards (8 pairs), Hard has 20 cards (10 pairs).
+    - The user can switch between levels easily at any time.
 5. As a site visitor, I would like to be able to see how long each game took, how many moves were made and how accurate I was.
-    - 
+    - During the game there is a game information section below the game area which updates the number of moves, number of correct and incorrect matches and the accuracy of the users moves.
+    - The game is timed from when the user clicks the start button until all the cards are matched.
+    - Once the game has been finished a message pops up with the time the user took to completed in seconds. This message also provides the number of moves and accuracy stats also.
+    - If a new game is started before the previous game has finished the scores are re-set ready for the new game.
 6. As a site visitor, I would like to be able to view the top scores/scorers on each level.
-    - 
+    - Not implemented for this deployment due to time and expertise level however this 
 7. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
     - 
 8. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.

@@ -114,6 +114,11 @@ h1, h2, h3, h4{
     list-style-type: none;
 }
 
+li > a {
+    text-decoration: underline;
+    color: #31315b;
+}
+
 
 .card-body .home-page-button{
     border: 2px groove #31315b;
@@ -203,7 +208,7 @@ button.btn.btn-secondary.active-level{
     border-top: 2px groove #31315b;
 }
 
-.modal .modal-footer > button:hover{
+.modal .modal-footer > button{
     color: rgb(166, 172, 194);
     background-color: #31315b;
     border-color: #31315b;
@@ -269,12 +274,22 @@ button.btn.btn-secondary.active-level{
     -o-transform:rotateY(180deg);
 }
 
-.game-card.flip > .card-back, .game-card.flip > .card-front{
+ .game-card.flip > .card-front{
     transform: rotateY(360deg);
     -webkit-transform:rotateY(360deg);
     -moz-transform:rotateY(360deg);
     -ms-transform:rotateY(360deg);
     -o-transform:rotateY(360deg);
+} 
+
+/* separated out to fix safari bug */
+
+.game-card.flip > .card-back{
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
 } 
 
 /*hide cards when matched*/
@@ -337,6 +352,14 @@ h3.text-overlay {
     font-family: inherit;
     text-align: center;
     border: 2px groove #31315b;
+}
+
+.win-info-container > h4, h2 {
+    margin-bottom: 1rem;
+}
+
+.win-info-container > p {
+    font-weight: bold;
 }
 
 .win-info-container .game-page-button{
