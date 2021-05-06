@@ -4,7 +4,8 @@
 
 [Please view the live project here](https://vivioli87.github.io/memory-game/)
 
-![Mockup]()
+![Mockup - home page](./assets/readme_images/mockup.jpg)
+![Mockup - game page](./assets/readme_images/mockup2.jpg)
 
 ## Table of Contents
 
