@@ -86,10 +86,7 @@ The memory game website is designed to be effective, consistent and user friendl
     - Consistent color scheme will be used throughout the site.
     - Links to external pages, if applicable, will open in a new tab so the user is not taken away from the game website.
 - Information Architecture (IA)
-    - The project was conceptualized to consist of a home page and *** sub-pages. This structure was used because it is simple and familiar to the site visitors and it is sufficient for most user cases.
-    - On each page there will be a consistent footer which will include:
-        1. the creator of the game.
-        2. 
+    - The project was conceptualized to consist of a home page and 2 sub-pages. This structure was used because it is simple and familiar to the site visitors and it is sufficient for most user cases.
     - Each page is clearly titled to make navigating the site clear and simple.
     - The content is organized and categorized by importance from left to right (navigation).
 
@@ -99,8 +96,12 @@ The memory game website is designed to be effective, consistent and user friendl
 
 The initial webpage layouts were sketched on the paper. The wireframes were then created in Balsamiq. Please view the wireframes for desktop, tablet and mobile screens on the following pdf.
 
-These initial wireframes included an additional page where I wanted to provide more information about Succulents, including a Google maps API for users to be able to find their nearest garden centre to look for these plants themselves. However I decided during development that this would be something to implement at a later date as I wanted to focus on the functionality of the game first and foremost.
-[Wireframe PDF]()
+These initial wireframes included a top scores section and an additional page where I wanted to provide more information about Succulents, including a Google maps API for users to be able to find their nearest garden centre to look for these plants themselves. However I decided during development that this would be something to implement at a later date as I wanted to focus on the functionality of the game first and foremost.
+[Initial wireframe PDF]()
+
+After realising that I would be omitting the top scores section and the google maps garden centre locator for this implementation. I re-created a wireframe to show what the website would look like without these ommissions.
+
+[Revised wireframe PDF]()
 
 [Back to table of contents](#table-of-contents)
 
@@ -167,6 +168,8 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
     - Brief introduction to the user about the game and my project.
     - How to play instructions
     - Small demo/tutorial to aid users to learn how to play the game.
+    - A button as another navigation link to the game within the game instructions section.
+    - A section with links to online resources about Succulents, what they are, how to care for them and where to buy them.
 - Game page
     - The buttons for difficulty levels are responsive.
     - The difficulty levels can be clicked and changed at any time to bring up a new game with the cards re-shuffled.
@@ -180,7 +183,7 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
         - the number of incorrect matches made.
         - the % accuracy in the game.
     - When the game has been complete a 'Congratualtions' message will apppear and will provide the user with their stats.
-    - Top Scores **
+    - A hidden timer, times hows long the user takes to completed the game - the elapsed time is shown within the congratulations message on completion of the game.
 
 
 ### Future Implemenatation
@@ -192,7 +195,7 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
          
 - A 3rd page as per initial Wireframe as a space to give more information about Succulents, including:
     - More specified information of the different succulent varieties, especially those used in the game.
-    - General care tips and advice for novice plant owners.
+    - General care tips and advice for novice plant owners (not just links to online resources).
     - A google maps API to allow the user to search their local area for stockists and garden centres.
 
 [Back to table of contents](#table-of-contents)
