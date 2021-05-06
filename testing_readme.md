@@ -32,16 +32,19 @@
     - The game is timed from when the user clicks the start button until all the cards are matched.
     - Once the game has been finished a message pops up with the time the user took to completed in seconds. This message also provides the number of moves and accuracy stats also.
     - If a new game is started before the previous game has finished the scores are re-set ready for the new game.
-6. As a site visitor, I would like to be able to view the top scores/scorers on each level.
-    - Not implemented for this deployment due to time and expertise level however this 
-7. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
-    - 
-8. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.
-    - 
-9. As a site visitor, I would like a the game website to be easily navigable and have sleek design, that is responsive on different devices.
-    - 
-10. As a site visitor, I want the imagery and colors to be eye-catching that make me want to learn more about succulent plants.
-    - 
+6. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.
+    - On the landing page, there is a section at the bottom which provides the users some resources on what succulents are, how to care for them and where to buy them also.
+    - Through playing the game, the user can see and appreciate the various succulent types and colours that exist.
+7. As a site visitor, I would like a the game website to be easily navigable and have sleek design, that is responsive on different devices.
+    - The website is fully responsive for different devices.
+8. As a site visitor, I want the imagery and colors to be eye-catching that make me want to learn more about succulent plants.
+    - The main colour used for the site is purple, in 2 contrasting shades. A darker purple for text, headings, links, borders and buttons to contrast against the softer pastel purple used for the backgrounds.
+    - I also used a background image of succulents to show through the pastel, opaque purple to keep the succulent theme going through the website.
+    - The same image used for the background was also used for the back of the cards.
+9. As a site visitor, I would like to be able to view the top scores/scorers on each level.
+    - Not implemented for this deployment due to time and knowledge level, however is something that would be implemented for future deployments.
+10. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
+    - Not implemented for this deployment due to time and knowledge level, however is something that would be implemented for future deployments.
 
 ### Business Stories
 
