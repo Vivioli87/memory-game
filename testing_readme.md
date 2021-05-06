@@ -119,9 +119,14 @@ I have previously used jshint and fixed any missing or unneccessary semi colon i
 
 #### Home Page
 
+No errors/warnings.
+
 ![jshint checker - home-page.js](./assets/readme_images/jshint-home.jpg)
 
 #### Game Page
+
+line 303 - undefined variable $ is a jquery line of code. Not altered as it completes the task required of it.
+line 336 -unused variable. the start function is called from the html file on this instance only for ease. It is in use so have not altered this either.
 
 ![jshint checker - game-page.js](./assets/readme_images/jshint-game.jpg)
 
