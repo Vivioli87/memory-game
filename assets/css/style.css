@@ -11,7 +11,7 @@ font-family: 'Montserrat', sans-serif; */
     border: 0;
 }
 
-/*for image background*/
+/* 100% height for image background*/
 
 body, html {
   height: 100%;
@@ -49,7 +49,7 @@ h1, h2, h3, h4{
 
 .nav-container{
     margin: 30px 15px;
-    background-color: rgb(166, 172, 194, 0.8); /*unsure about color - might change along with image!*/
+    background-color: rgb(166, 172, 194, 0.8); 
     border: 2px groove #31315b;
     font-family: 'Lobster', cursive;
     font-weight: 900;
@@ -119,7 +119,6 @@ li > a {
     color: #31315b;
 }
 
-
 .card-body .home-page-button{
     border: 2px groove #31315b;
     margin: 10px 20px 0;
@@ -130,8 +129,17 @@ li > a {
     border-radius: 5px;
 }
 
- #demo {
+.demo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 10px;
+    justify-content: center;
+    justify-items: center;
     margin-bottom: 15px;
+}
+/* reset button for demo*/
+#demo{
+     margin-bottom: 30px;
 }
 
 .top-scores-container{
@@ -149,7 +157,7 @@ li > a {
 section.inner-container{
     height: fit-content;
     text-align: center;
-    background-color: rgb(166, 172, 194, 0.8)
+    background-color: rgb(166, 172, 194, 0.8);
 }
 
 #game-area{
@@ -214,22 +222,9 @@ button.btn.btn-secondary.active-level{
     border-color: #31315b;
 }
 
-/*demo from home page*/
-.demo-container {
-    margin-bottom: 15px;
-}
-
 .game-card-area {
     display: grid;
     grid-template-columns: repeat(4, 150px);
-    grid-gap: 10px;
-    justify-content: center;
-    justify-items: center;
-}
-
-.demo-container {
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
     grid-gap: 10px;
     justify-content: center;
     justify-items: center;
@@ -251,11 +246,13 @@ button.btn.btn-secondary.active-level{
     -moz-perspective:500px;
     -ms-perspective:500px;
     -o-perspective:500px;
-     backface-visibility: none;
+    /* 
+    Added in when fixing safari glitch but need to check if needed before deleting fully
+    backface-visibility: none; 
     -webkit-backface-visibility:none;
     -moz-backface-visibility:none;
     -ms-backface-visibility:none;
-    -o-backface-visibility:none;
+    -o-backface-visibility:none; */
 }
 
 .game-card:hover{
@@ -282,7 +279,7 @@ button.btn.btn-secondary.active-level{
     -o-transform:rotateY(360deg);
 } 
 
-/* separated out to fix safari bug */
+/* separated out from above section and changed to 180deg to fix safari bug */
 
 .game-card.flip > .card-back{
     transform: rotateY(180deg);
@@ -372,7 +369,7 @@ h3.text-overlay {
     border-radius: 5px;
 }
 
-/*media queries for game page */
+/*media queries for game page and demo container on front page */
 
 @media only screen and (max-width: 990px) {
     .game-info-area{

@@ -113,6 +113,20 @@ No errors for Game page.
 
 ### jshint.com
 
+When using jshint ensue to enable the "New JavaScript features (ES6)" in the configure tab. 
+
+I have previously used jshint and fixed any missing or unneccessary semi colon issues.
+
+#### Home Page
+
+![jshint checker - home-page.js](./assets/readme_images/jshint-home.jpg)
+
+#### Game Page
+
+![jshint checker - game-page.js](./assets/readme_images/jshint-game.jpg)
+
+[Back to table of contents](#table-of-contents)
+
 ## Functionality Testing
 
 - Feature testing on each page in turn and for all screen sizes using the developer tools, my own personal devices and got friends/family to test also.

@@ -243,7 +243,7 @@ function checkMatch () {
         } else {
             setTimeout(noMatch, 1500); //added timeout as wasn't showing that the 2nd card didnt match before unflipping
             clickedCards = [];
-        };
+        }
     }
 
     gameWon();
@@ -335,7 +335,7 @@ function accuracy () {
 
 function start() {
     startTime = performance.now();
-};
+}
 
 function end() {
     endTime = performance.now();
@@ -349,6 +349,6 @@ function end() {
     //updates time taken section in win message
     let timeTaken = document.getElementById("time-taken");
     timeTaken.innerText = seconds;
+    }
 
-    };
 
