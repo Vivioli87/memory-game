@@ -93,23 +93,21 @@ Checked using both validate by direct input and validate by URI options.
 
 #### Home page
 
-No errors for home page.
+JavaScript script link warning.
 
-![home page - validation]()
-
+![home page - validation](./assets/readme_images/home-html.jpg)
 
 #### Game page
 
-No errors for Game page.
+Initally there was an error with the arialabelledby attribute for the bootstrap modal used where the modal title id had been deleted in error.
 
-![Game page - validation]()
+Same JavaScript script link warning.
 
+![Game page - validation](./assets/readme_images/game-html.jpg)
 
 ### W3C CSS Validation Service
 
-![CSS - validation]()
-
-[Back to table of contents](#table-of-contents)
+![CSS - validation](./assets/readme_images/CSS-validator.jpg)
 
 ### jshint.com
 
@@ -193,15 +191,18 @@ Using lighthouse on Google Chrome developer tools - reports generated
 
 #### Home page
 
+![lighthouse report - home page](./assets/readme_images/lighthouse-home.jpg)
 
 #### Game page
 
-
+![lighthouse report - game page](./assets/readme_images/lighthouse-game.jpg)
+![lighthouse report - game page, best practice image issues](./assets/readme_images/lighthouse-game-warnings.jpg)
 
 ### Issues highlighted from Lighthouse reports and fixed.
 
 - issues with image sizes and formats in performance section.
 - meta descriptions missing for pages.
+- external links not having rel="noopener" for security reasons
 
 [Back to table of contents](#table-of-contents)
 

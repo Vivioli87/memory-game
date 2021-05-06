@@ -252,18 +252,18 @@ Testing process was written in a separate document [Testing document](https://gi
 The project deployment to GitHub Pages is explained in the below steps:
 1.	Login into GitHub, locate and select [Memory game](https://github.com/Vivioli87/memory-game) from the list of repositories.  
 
-![Repositories]()
+![Repositories](./assets/readme_images/Githubpages-1.jpg)
 
 2.	At the top of the Repository page, under the sub-headings, select "Settings" button.  
 
-![Repositories]()
+![Repositories](./assets/readme_images/Githubpages-2.jpg)
 
 3.	Scroll down the page until you reach "GitHub Pages" section.
 4.	Under the "Source" sub-section, select "master" branch.
 5.	Click "Save" button.
 6.	The page will refresh. To locate the link to the published site, scroll down again to the "GitHub Pages" section. Your link will be highlighted in the green box per screenshot below.
 
-![Repositories]()
+![Repositories](./assets/readme_images/Githubpages-3.jpg)
 
 [Back to table of contents](#table-of-contents)
 
@@ -293,9 +293,7 @@ Then follow these steps:
     - [youtube tutorial video](https://www.youtube.com/watch?v=ZniVgo8U7ek)
 
 - Reference on adding audio in javascript.
-    - [Stack overflow](https://stackoverflow.com/questions/42772570/setting-an-audio-source-to-a-variable)
-
-    
+    - [Stack overflow](https://stackoverflow.com/questions/42772570/setting-an-audio-source-to-a-variable) 
 
 ### Media
 
