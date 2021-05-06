@@ -294,7 +294,7 @@ function gameWon () {
     winInfo.innerHTML = `
     <h2>Congratulations! </h2>
     <h4>You have completed this Level</h4>
-    <p>You took ${moves} moves to complete this level in <span id="time-taken">0</span> seconds. </p>
+    <p>You took ${moves} moves and <span id="time-taken">0</span> seconds to complete this level. </p>
     <p>Your accuracy was: ${accuracy}%</p>
     <button onclick="document.location='game.html'" class="game-page-button">Click to play again!</button>
     `;

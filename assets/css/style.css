@@ -246,11 +246,11 @@ button.btn.btn-secondary.active-level{
     -moz-perspective:500px;
     -ms-perspective:500px;
     -o-perspective:500px;
-     backface-visibility: hidden;
-    -webkit-backface-visibility:hidden;
-    -moz-backface-visibility:hidden;
-    -ms-backface-visibility:hidden;
-    -o-backface-visibility:hidden;
+     backface-visibility: none;
+    -webkit-backface-visibility:none;
+    -moz-backface-visibility:none;
+    -ms-backface-visibility:none;
+    -o-backface-visibility:none;
 }
 
 .game-card:hover{
