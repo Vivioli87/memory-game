@@ -1,4 +1,4 @@
-Succulent Match - A memory game (Testing section)
+# Succulent Match - A memory game (Testing section)
 
 [Main README.md file](https://github.com/Vivioli87/memory-game/blob/master/README.md)  
 
@@ -85,7 +85,10 @@ Succulent Match - A memory game (Testing section)
 ## Code Validation
 
 Every page of the project was validated by the [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) to ensure there were no syntax errors or issues.
-[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate CSS code and [jshint.com](https://jshint.com/) was used to check JS code.
+
+[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate CSS code.
+
+[jshint.com](https://jshint.com/) was used to check JS code.
 
 ### W3C Markup Validation Service
 
@@ -99,7 +102,7 @@ JavaScript script link warning.
 
 #### Game page
 
-Initally there was an error with the arialabelledby attribute for the bootstrap modal used where the modal title id had been deleted in error.
+Initally there was an error with the arialabelledby attribute for the bootstrap modal used where the modal title id had been deleted in error, this was rectified.
 
 Same JavaScript script link warning.
 
@@ -107,7 +110,7 @@ Same JavaScript script link warning.
 
 ### W3C CSS Validation Service
 
-![CSS - validation](./assets/readme_images/CSS-validator.jpg)
+![CSS - validation](./assets/readme_images/css-validator.jpg)
 
 ### jshint.com
 
@@ -124,6 +127,7 @@ No errors/warnings.
 #### Game Page
 
 line 303 - undefined variable $ is a jquery line of code. Not altered as it completes the task required of it.
+
 line 336 -unused variable. the start function is called from the html file on this instance only for ease. It is in use so have not altered this either.
 
 ![jshint checker - game-page.js](./assets/readme_images/jshint-game.jpg)
@@ -164,14 +168,14 @@ The website is functioning and fully responsive on all above mentioned browsers.
 For all my media queries, I used the following page for help on [standard device sizes](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
 
 The website was tested on the following devices:
-- desktop computer
+- Windows laptop
 - Samsung Galaxy A70
 
 The site has been tested on friend's devices also. These include:
 - MacBook pro
 - Samsung S8 / S21
 - iPhone 7 / 11 / 12 / XR
-- Google3
+- Google3 phone
 - Samsung tablet.
 
 I have tested other devices using the chrome developer tools including:

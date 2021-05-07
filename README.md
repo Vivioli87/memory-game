@@ -57,11 +57,13 @@ The user types for this website would be fans (old and new), key people within t
 3. As a site visitor, I would like to be able to try a tutorial or demo before attempting a real game.
 4. As a site visitor, I would like to be able to play different levels.
 5. As a site visitor, I would like to be able to see how long each game took, how many moves were made and how accurate I was.
-6. As a site visitor, I would like to be able to view the top scores/scorers on each level.
-7. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
-8. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.
-9. As a site visitor, I would like the game website to be easily navigable and have sleek design, that is responsive on different devices.
-10. As a site visitor, I want the imagery and colors to be eye-catching that make me want to learn more about succulent plants.
+6. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.
+7. As a site visitor, I would like the game website to be easily navigable and have sleek design, that is responsive on different devices.
+8. As a site visitor, I want the imagery and colors to be eye-catching that make me want to learn more about succulent plants.
+9. As a site visitor, I would like to be able to view the top scores/scorers on each level.
+10. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
+
+
 
 ### Business Stories
 1. As a site owner, I have the same goals as the external users. I would like to make a game that I would enjoy playing.
@@ -96,6 +98,7 @@ The memory game website is designed to be effective, consistent and user friendl
 The initial webpage layouts were sketched on the paper. The wireframes were then created in Balsamiq. Please view the wireframes for desktop, tablet and mobile screens on the following pdf.
 
 These initial wireframes included a top scores section and an additional page where I wanted to provide more information about Succulents, including a Google maps API for users to be able to find their nearest garden centre to look for these plants themselves. However, I decided during development that this would be something to implement at a later date as I wanted to focus on the functionality of the game first and foremost.
+
 [Initial wireframe PDF](./assets/readme_images/initial-wireframe.pdf)
 
 After realising that I would be omitting the top scores section and the google maps garden centre locator for this implementation. I re-created a wireframe to show what the website would look like without these ommissions.
