@@ -233,7 +233,7 @@ button.btn.btn-secondary.active-level{
 .game-card{
     height: 175px;
     width: 125px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
     position: relative;
     transform-style: preserve-3d;
@@ -271,7 +271,7 @@ button.btn.btn-secondary.active-level{
     -o-transform:rotateY(360deg);
 } 
 
-/* separated out from above section and changed to 180deg to fix safari bug */
+/* separated out from above section and changed to 180deg from 360deg to fix safari bug */
 
 .game-card.flip > .card-back{
     transform: rotateY(180deg);

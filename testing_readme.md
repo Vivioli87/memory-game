@@ -1,4 +1,4 @@
-# Succulent Match - A memory game (Testing section)
+Succulent Match - A memory game (Testing section)
 
 [Main README.md file](https://github.com/Vivioli87/memory-game/blob/master/README.md)  
 
@@ -38,7 +38,7 @@
 6. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.
     - On the landing page, there is a section at the bottom which provides the users some resources on what succulents are, how to care for them and where to buy them also.
     - Through playing the game, the user can see and appreciate the various succulent types and colours that exist.
-7. As a site visitor, I would like a the game website to be easily navigable and have sleek design, that is responsive on different devices.
+7. As a site visitor, I would like the game website to be easily navigable and have sleek design, that is responsive on different devices.
     - The website is fully responsive for different devices.
     - There is a navigation bar at the top of each page to allow users to access any page of the website at any time.
     - There is a button within the game instructions section on the home page, which takes the user to the game page when they are ready to play also.
@@ -49,9 +49,9 @@
     - The same image used for the background was also used for the back of the cards.
     - For the differenct succulent cards, i tried to find images that are eyecatching in their own way, that aren't too similar in colour and that convey how many varieties of succulents you can find.
 9. As a site visitor, I would like to be able to view the top scores/scorers on each level.
-    - Not implemented for this deployment due to time and knowledge level, however is something that would be implemented for future deployments.
+    - Not implemented for this deployment due to time and knowledge level. However, is something that would be implemented for future deployments.
 10. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
-    - Not implemented for this deployment due to time and knowledge level, however is something that would be implemented for future deployments.
+    - Not implemented for this deployment due to time and knowledge level. However, is something that would be implemented for future deployments.
 
 ### Business Stories
 
@@ -65,9 +65,9 @@
     - There is a tutorial/demo version of the game to get the user used to how to play and the interactivity with the cards before playing for real.
 3. As a site owner, I would like to make the game logical to follow and interact with, even without reading the instructions prior.
     - All links, buttons, and interactive elements (such as the game cards) have a pointer cursor when they are hovered over to prompt the user to click.
-    - The game cards can only be clicked in pairs, the cards are locked so a third cannot be clicked before the game can check if they match.
+    - The game cards can only be clicked in pairs; the cards are locked so a third cannot be clicked before the game can check if they match.
     - The same game card can also not be clicked more than once in a move either.
-    - When the user finds a matching pair these are hidden to take them 'out of the game'.
+    - When the user finds a matching pair, these are hidden to take them 'out of the game'.
     - The game is generally simple to figure out and interact with without reading any instructions.
 3. As a site owner, I would like to provide a lot of interactivity within the game to provide information regarding the time taken, number of moves etc in order to produce 'top scores' and to provide a competitive element to the game.
     - Under the game area, there is a section which gives in game feedback to the user on how many moves they have made, how many correct and incorrect matches they have made and how accurate they have been.
@@ -77,8 +77,8 @@
     - At the bottom of the home page I have included a section with online references on succulents: what they are, how to care for them and where to buy them.
     - In the about the game section on the home page, I have talked about why I chose succulents as the theme of my game which will show my passion and hopefully spark the user's interest in them also.
 5. As a site owner, I would like to provide a google map service so users can look up their local garden centre/succulent stockist.
-    - Not implemented for this deployment due to time and prioritising other aspects of the website, however is something that would be implemented for future deployments.
-    - However I have made reference to where users can buy/find succulents and also provided some links to buy them online.
+    - Not implemented for this deployment due to time and prioritising other aspects of the website. This is something that would be implemented for future deployments.
+    - However, I have made reference to where users can buy/find succulents and also provided some links to buy them online.
 
 [Back to table of contents](#table-of-contents)
 
@@ -148,11 +148,14 @@ line 336 -unused variable. the start function is called from the html file on th
 
 The website was tested on the following browser types. All browser versions were up to date.
 - **Google chrome** - best performance with all cookies allowed.
-- firefox
+- Firefox
 - Safari
+- Edge
+- Opera (tested on ubuntu Linux)
 - Samsung Internet
-- Google chrome for Android   
+- Google chrome for Android 
 
+The website does not work on Internet Explorer (javaScript does not function for some reason), please use Edge if you need to use a microsoft browser.
 
 The website is functioning and fully responsive on all above mentioned browsers.
 
@@ -165,12 +168,11 @@ The website was tested on the following devices:
 - Samsung Galaxy A70
 
 The site has been tested on friend's devices also. These include:
-- Macbook pro
+- MacBook pro
 - Samsung S8 / S21
-- iphone 7 / 11 / 12 / XR
+- iPhone 7 / 11 / 12 / XR
 - Google3
 - Samsung tablet.
-
 
 I have tested other devices using the chrome developer tools including:
 - Moto G4
@@ -208,7 +210,9 @@ Using lighthouse on Google Chrome developer tools - reports generated
 
 ## Encountered Issues
 
-- During testing phase, my friends with iPhones reported a glitch when the cards flipped which would show half the back and half the front momentarily. This was an issue I had been unaware of due to not using apple products or the safari web browser. After playing around with the transormY css attributes for the game-card, card-front and card-back classes I found a fix that worked on both android and apple products.
-
+- When testing website on Edge the background colours of the accordian and nav bar weren't showing correctly. These colours had some opacity and I realised that instead of rgba( *,*,*,*) i had put rgb(*,*,*,*) and therefore Edge wasnt reading the attribute.
+- During testing phase, my friends with iPhones reported a glitch when the cards flipped which would show half the back and half the front momentarily. This was an issue I had been unaware of due to not using apple products or the safari web browser. After playing around with the transormY css attributes for the game-card, card-front and card-back classes I found a fix that worked on both android and apple products. Noted in css.
+- There was also an issue with some of the cards being cut off at the top of the bottom when flipping. I fixed this by removing overflow:hidden on the main game-card div as it is only needed for the card-front and card-back divs inside.
+- Another flip card glitch was that if a card is selected and then the one below in the same column is also selected, when they unflip the cards seem to cross into each other. To fix this, I added a bit more margin to the game card to stop this happening.
 
 [Back to table of contents](#table-of-contents)

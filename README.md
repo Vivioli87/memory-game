@@ -18,20 +18,20 @@
     - [Skeleton](#skeleton)
         - Wireframes
     - [Design](#design)
-        - Color Scheme
+        - Colour Scheme
         - Fonts
         - Imagery
         - Audio
 3. [Features](#features)
     - Current Features
-    - Future Implemenatation
+    - Future Implementation
 4. [Technologies](#technologies)
     - Languages
     - Frameworks, Libraries and Tools
     - Validation
 5. [Testing](#testing)
 6. [Deployment](#deployment)
-    - Github pages
+    - GitHub pages
 7. [Credits](#credits)
     - Code
     - Media
@@ -60,9 +60,8 @@ The user types for this website would be fans (old and new), key people within t
 6. As a site visitor, I would like to be able to view the top scores/scorers on each level.
 7. As a site visitor, I would like to log my top score with my name if I beat any 'top scores'.
 8. As a site visitor, I would like an option to learn more about the subject matter of the game: Succulents.
-9. As a site visitor, I would like a the game website to be easily navigable and have sleek design, that is responsive on different devices.
+9. As a site visitor, I would like the game website to be easily navigable and have sleek design, that is responsive on different devices.
 10. As a site visitor, I want the imagery and colors to be eye-catching that make me want to learn more about succulent plants.
-
 
 ### Business Stories
 1. As a site owner, I have the same goals as the external users. I would like to make a game that I would enjoy playing.
@@ -71,7 +70,6 @@ The user types for this website would be fans (old and new), key people within t
 3. As a site owner, I would like to provide a lot of interactivity within the game to provide information regarding the time taken, number of moves etc in order to produce 'top scores' and to provide a competitive element to the game.
 4. As a site owner, I would like to share my passion for succulent plants as well as advice (separate to the game) on how to care for them.
 5. As a site owner, I would like to provide a google map service so users can look up their local garden centre/succulent stockist.
-
 
 [Back to table of contents](#table-of-contents)
 
@@ -84,10 +82,10 @@ The memory game website is designed to be effective, consistent and user friendl
     - The navigation links when hovered over will provide a visual indication to the site visitors what they are selecting.
     - The navigation link on the active page will provide a visual indication to the site visitors of what page they are currently viewing.
     - Buttons when hovered over and clicked will provide a visual indication to the site visitors what they are selecting.
-    - Consistent color scheme will be used throughout the site.
+    - Consistent colour scheme will be used throughout the site.
     - Links to external pages, if applicable, will open in a new tab so the user is not taken away from the game website.
 - Information Architecture (IA)
-    - The project was conceptualized to consist of a home page and 2 sub-pages. This structure was used because it is simple and familiar to the site visitors and it is sufficient for most user cases.
+    - The project was conceptualized to consist of a home page and 2 sub-pages. This structure was used because it is simple and familiar to the site visitors and it is enough for most user cases.
     - Each page is clearly titled to make navigating the site clear and simple.
     - The content is organized and categorized by importance from left to right (navigation).
 
@@ -97,7 +95,7 @@ The memory game website is designed to be effective, consistent and user friendl
 
 The initial webpage layouts were sketched on the paper. The wireframes were then created in Balsamiq. Please view the wireframes for desktop, tablet and mobile screens on the following pdf.
 
-These initial wireframes included a top scores section and an additional page where I wanted to provide more information about Succulents, including a Google maps API for users to be able to find their nearest garden centre to look for these plants themselves. However I decided during development that this would be something to implement at a later date as I wanted to focus on the functionality of the game first and foremost.
+These initial wireframes included a top scores section and an additional page where I wanted to provide more information about Succulents, including a Google maps API for users to be able to find their nearest garden centre to look for these plants themselves. However, I decided during development that this would be something to implement at a later date as I wanted to focus on the functionality of the game first and foremost.
 [Initial wireframe PDF]()
 
 After realising that I would be omitting the top scores section and the google maps garden centre locator for this implementation. I re-created a wireframe to show what the website would look like without these ommissions.
@@ -108,7 +106,7 @@ After realising that I would be omitting the top scores section and the google m
 
 ## Design
 
-### Color Scheme
+### Colour Scheme
 
 - I want the color scheme to incorporate the colors of succulents. Whilst there are many various succulent colors, I decided on pastel shades of purple so that the colors aren't too bold and overtake the content. I offset this with a background image that had greens and subtle purple shades in it to compliment the color scheme.
 - I wanted the color scheme to be calming and aid learning as well as memory improvement.
@@ -117,7 +115,7 @@ After realising that I would be omitting the top scores section and the google m
     - "Purple combines the calm stability of blue and the fierce energy of red. The color purple is often associated with royalty, nobility, luxury, power, and ambition."
     - "The color purple is a rare occurring color in nature and as a result is often seen as having sacred meaning."
     - "The color purple has a variety of effects on the mind and body, including uplifting spirits, calming the mind and nerves."
-    - "The color purple can boost imagination and creativity."
+    - "The colour purple can boost imagination and creativity."
 
 ### Fonts
 
@@ -148,7 +146,6 @@ After realising that I would be omitting the top scores section and the google m
 
 - I wanted an audio sound to congratulate the user when they had completed a level. I used a round of applause sound from [free sounds library](https://www.freesoundslibrary.com/small-crowd-clapping/)
 
-
 [Back to table of contents](#table-of-contents)
 
 ## Features
@@ -161,7 +158,7 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
 ### Current Features
 - Navigation bar (on both pages):
     - an easy way to navigate through the website to specific sections of the website.
-    - it is fully responsive and it collapses to navbar-toggler-icon (hamburger menu) on medium and small devices.
+    - it is fully responsive, and it collapses to navbar-toggler-icon (hamburger menu) on medium and small devices.
 - Responsive
     - Drop-down navbar on medium and small devices.
     - Size and layout differences to be more aesthetically pleasing on medium and small devices, which is discussed in the specific pages below.
@@ -177,19 +174,18 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
     - The cards are in a responsive grid layout: the card size as well as number of columns of cards in the grid change depending on what device is being used at the time.
     - The four game information stats are also responsive, to allow them to be easily read by the user.
     - Only 2 cards can be clicked at any one time, the board is locked to prevent a 3rd card being clicked before the game checks whether the cards match or not.
-    - The same card cannot also be clicked twice, a unique card must be selected as the second card.
+    - The same card cannot also be clicked twice; a unique card must be selected as the second card.
     - Game information section calculates:
         - the number of moves made.
         - the number of correct matches made.
         - the number of incorrect matches made.
         - the % accuracy in the game.
     - When the game has been complete a 'Congratualtions' message will apppear and will provide the user with their stats.
-    - A hidden timer, times hows long the user takes to completed the game - the elapsed time is shown within the congratulations message on completion of the game.
+    - A hidden timer, times hows long the user takes to complete the game - the elapsed time is shown within the congratulations message on completion of the game.
 
+### Future Implementation
 
-### Future Implemenatation
-
-- A top scores/scorers feature as per initial Wireframe. Attempted but left out of this implementation due to knowledge and time constraints. However the idea was to have:
+- A top scores/scorers feature as per initial Wireframe. Attempted but left out of this implementation due to knowledge and time constraints. However, the idea was to have:
     - a form on game completion that appears if the score/elapsed time was better than the scores already on the leaderboards.
         - The form would capture the name of the user and on submit would put the user's name and time in the appropriate position on the leaderboard.
     - code to check for each level the new time elapsed against already stored times on the leaderboard (real or placeholder).
@@ -229,6 +225,7 @@ The website consists of 2 pages: 'Home/About' (landing) page and the 'Game' page
 - [Unsplash](https://unsplash.com/) - images library
 - [Pexels website](https://www.pexels.com/) - images library
 - [Free Sounds Library](https://www.freesoundslibrary.com) - sound effects
+- [Real Favicon Generator](https://realfavicongenerator.net/) - used to create a favicon.
 
 ### Validation
 
@@ -248,21 +245,21 @@ Testing process was written in a separate document [Testing document](https://gi
 
 ## Deployment
 
-### Github pages
+### GitHub pages
 
 The project deployment to GitHub Pages is explained in the below steps:
-1.	Login into GitHub, locate and select [Memory game](https://github.com/Vivioli87/memory-game) from the list of repositories.  
+1.  Login into GitHub, locate and select [Memory game](https://github.com/Vivioli87/memory-game) from the list of repositories.  
 
 ![Repositories](./assets/readme_images/Githubpages-1.jpg)
 
-2.	At the top of the Repository page, under the sub-headings, select "Settings" button.  
+2.  At the top of the Repository page, under the sub-headings, select "Settings" button.  
 
 ![Repositories](./assets/readme_images/Githubpages-2.jpg)
 
-3.	Scroll down the page until you reach "GitHub Pages" section.
-4.	Under the "Source" sub-section, select "master" branch.
-5.	Click "Save" button.
-6.	The page will refresh. To locate the link to the published site, scroll down again to the "GitHub Pages" section. Your link will be highlighted in the green box per screenshot below.
+3.  Scroll down the page until you reach "GitHub Pages" section.
+4.  Under the "Source" sub-section, select "master" branch.
+5.  Click "Save" button.
+6.  The page will refresh. To locate the link to the published site, scroll down again to the "GitHub Pages" section. Your link will be highlighted in the green box per screenshot below.
 
 ![Repositories](./assets/readme_images/Githubpages-3.jpg)
 
@@ -271,13 +268,13 @@ The project deployment to GitHub Pages is explained in the below steps:
 ### How to run this project locally
 
 To clone this project into Gitpod you will need:
-    - A Github account. Create a Github account here
+    - A GitHub account. Create a GitHub account here
     - Use the Chrome browser   
 
 Then follow these steps:
-1. Install the Gitpod Browser Extentions for Chrome
+1. Install the Gitpod Browser Extensions for Chrome
 2. After installation, restart the browser
-3. Log into Gitpod with your github account.
+3. Log into Gitpod with your GitHub account.
 4. Navigate to the Project GitHub repository
 5. Click the green "Gitpod" button in the top right corner of the respository
 6. This will trigger a new gitpod workspace to be created from the code in github where you can work locally.
@@ -293,8 +290,14 @@ Then follow these steps:
 - Video on memory game - I only used the code for shuffling the cards from the video at ** TIMESTAMP NEEDED **
     - [youtube tutorial video](https://www.youtube.com/watch?v=ZniVgo8U7ek)
 
-- Reference on adding audio in javascript.
+- Reference on adding audio in JavaScript.
     - [Stack overflow](https://stackoverflow.com/questions/42772570/setting-an-audio-source-to-a-variable) 
+
+- Favicon console message
+    - [Stack overflow](https://stackoverflow.com/questions/31075893/im-getting-favicon-ico-error)
+
+- How to remove a 401-console error which references the site manifest for favicon
+    - [401 error](https://medium.com/@aurelien.delogu/401-error-on-a-webmanifest-file-cb9e3678b9f3)
 
 ### Media
 
@@ -311,6 +314,9 @@ Then follow these steps:
     - [Lily Li](https://unsplash.com/@lillilstar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
     - [Nicolas Hirajeta](https://unsplash.com/@nicolashirajeta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
+- Icon used for favicon.
+    - Icon made by [Darius Dan](https://www.flaticon.com/authors/darius-dan) from [Flaticon](https://www.flaticon.com/)
+
 - Audio - as previously credited earlier in this doc.
     - [Free Sound Library - clapping](https://www.freesoundslibrary.com/small-crowd-clapping/)
 
@@ -326,3 +332,4 @@ Then follow these steps:
 The information provided on this website is for educational purposes only.
 
 [Back to table of contents](#table-of-contents)
+

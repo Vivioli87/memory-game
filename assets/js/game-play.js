@@ -7,7 +7,7 @@ let startTime, endTime;
 
 // wait for the DOM to load before running game.
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
 
     let buttons = document.getElementsByClassName("btn-secondary");
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 //wrote separate function as removing 'active-level' class in above function wouldn't work
-function resetButtons () {
+function resetButtons() {
     let buttons = document.getElementsByClassName("btn-secondary");
 
     for (let button of buttons) {
@@ -51,7 +51,7 @@ function runGame(difficultyLevel) {
 
 //removing cards functions called at start to remove any additional cards added by selecting other levels
 //reset scores
-function displayEasyLevel () {
+function displayEasyLevel() {
 
     removeMedCards();
     removeHardCards();
@@ -73,7 +73,7 @@ function displayEasyLevel () {
 // adds 4 new cards to play with 
 //removing cards functions called at start to remove any additional cards added by selecting other levels
 //reset scores
-function displayMediumLevel () {
+function displayMediumLevel() {
     displayEasyLevel();
     removeMedCards();
     removeHardCards();
@@ -126,7 +126,7 @@ function displayMediumLevel () {
 
 // adds the 4 cards from medium level and 4 extra cards
 //reset scores
-function displayHardLevel () {
+function displayHardLevel() {
     displayMediumLevel();
     resetScores();
     let gameArea = document.getElementsByClassName("game-card-area")[0];
@@ -175,7 +175,7 @@ function displayHardLevel () {
 }
 
 //removes medium level cards from play
-function removeMedCards () {
+function removeMedCards() {
     let medCards = document.getElementsByClassName("medium-level");
     while (medCards.length > 0) {
         medCards[0].parentNode.removeChild(medCards[0]);
@@ -183,7 +183,7 @@ function removeMedCards () {
 }
 
 //removes hard level cards from play
-function removeHardCards () {
+function removeHardCards() {
     let hardCards = document.getElementsByClassName("hard-level");
     while (hardCards.length > 0) {
         hardCards[0].parentNode.removeChild(hardCards[0]);
@@ -191,7 +191,7 @@ function removeHardCards () {
 }
 
 //resets scores with new games
-function resetScores () {
+function resetScores() {
     document.getElementById("correct-matches").innerText = "0";
     document.getElementById("incorrect-matches").innerText = "0";
     document.getElementById("moves").innerText = "0";
@@ -210,7 +210,7 @@ function shuffleCards() {
 }
 
 //flips the card when clicked and adds to clicked cards array to check if match
-function flipCard (event) {
+function flipCard(event) {
 
     this.classList.add("flip");
     clickedCards.push(this);
@@ -219,7 +219,7 @@ function flipCard (event) {
 }
 
 //checks if the 2 cards selected match based on data-succulent attribute
-function checkMatch () {
+function checkMatch() {
 
     let firstCard = clickedCards[0];
     let secondCard = clickedCards[1];
@@ -251,7 +251,7 @@ function checkMatch () {
 
 //code to execute if pair is not a match
 
-function noMatch (firstCard, secondCard) {
+function noMatch() {
     let cards = document.getElementsByClassName("game-card");
 
     for (let card of cards) {
@@ -283,7 +283,7 @@ function unlockBoard() {
 
 //reveals 'Congratulations message' when all cards have been matched.
 
-function gameWon () {
+function gameWon() {
     let gameContainer = document.getElementsByClassName("inner-container")[0];
     let winInfo = document.createElement('div');
     let moves = parseInt(document.getElementById("moves").innerText);
@@ -310,22 +310,22 @@ function gameWon () {
 }
 
 //functions to increase/calculate scores based on moves taken
-function incrementCorrectMatches () {
+function incrementCorrectMatches() {
     let oldScore = parseInt(document.getElementById("correct-matches").innerText);
     document.getElementById("correct-matches").innerText = ++oldScore;
 }
 
-function incrementIncorrectMatches () {
+function incrementIncorrectMatches() {
     let oldScore = parseInt(document.getElementById("incorrect-matches").innerText);
     document.getElementById("incorrect-matches").innerText = ++oldScore;
 }
 
-function numberOfMoves () {
+function numberOfMoves() {
     let oldScore = parseInt(document.getElementById("moves").innerText);
     document.getElementById("moves").innerText = ++oldScore;
 }
 
-function accuracy () {
+function accuracy() {
     let numberOfMoves = parseInt(document.getElementById("moves").innerText);
     let correctMatches = parseInt(document.getElementById("correct-matches").innerText);
     document.getElementById("accuracy").innerText = Math.round((correctMatches/numberOfMoves) * 100);
