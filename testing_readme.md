@@ -202,7 +202,7 @@ Using lighthouse on Google Chrome developer tools - reports generated
 
 ### Issues highlighted from Lighthouse reports and fixed.
 
-- issues with image sizes and formats in performance section.
+- issues with image sizes and formats in performance section - tried to fix by hosting pics on cloudinary.
 - meta descriptions missing for pages.
 - external links not having rel="noopener" for security reasons
 

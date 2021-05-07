@@ -96,11 +96,11 @@ The memory game website is designed to be effective, consistent and user friendl
 The initial webpage layouts were sketched on the paper. The wireframes were then created in Balsamiq. Please view the wireframes for desktop, tablet and mobile screens on the following pdf.
 
 These initial wireframes included a top scores section and an additional page where I wanted to provide more information about Succulents, including a Google maps API for users to be able to find their nearest garden centre to look for these plants themselves. However, I decided during development that this would be something to implement at a later date as I wanted to focus on the functionality of the game first and foremost.
-[Initial wireframe PDF]()
+[Initial wireframe PDF](./assets/readme_images/initial-wireframe.pdf)
 
 After realising that I would be omitting the top scores section and the google maps garden centre locator for this implementation. I re-created a wireframe to show what the website would look like without these ommissions.
 
-[Revised wireframe PDF]()
+[Revised wireframe PDF](./assets/readme_images/final-wireframe.pdf)
 
 [Back to table of contents](#table-of-contents)
 
@@ -128,7 +128,7 @@ After realising that I would be omitting the top scores section and the google m
 
 - For the images, I wanted to chose impactful images of Succulents to show off how diverse they can be in color, size, shape in their varieties.
 - For the main image used as the background for the site and for the back face of the game cards I used a photo by [Maureen Bekker](https://www.pexels.com/@maureen-piecesphotography) from the [Pexels website](https://www.pexels.com/)
-![Main succulent image used](pexels-maureen-bekker-1207978.jpg)
+![Main succulent image used](https://res.cloudinary.com/vivioli87/image/upload/v1620255042/Succulent%20game/pexels-maureen-bekker-1207978_k3xzr8.jpg)
 
 - Other photos used were mainly from [Unsplash](https://unsplash.com/), credits below to photographers used.
     - [Annie Spratt](https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
@@ -287,7 +287,7 @@ Then follow these steps:
     - [w3schools reference](https://www.w3schools.com/howto/howto_css_flip_card.asp?fbclid=IwAR1HoWYWqjkVCgnD2z2zrqbAkkbCK3XW68m8RCO2jmuyQMy9y5L3uXgCx-8)
     - [Stack overflow](https://stackoverflow.com/questions/25634200/2nd-image-appears-as-mirror-image-in-ie-css-image-flip-transform-how-to-fix)
 
-- Video on memory game - I only used the code for shuffling the cards from the video at ** TIMESTAMP NEEDED **
+- Video on a memory game, that i took tips and inspiration from. Card shuffling code and realising that code is needed for a double click or 3rd card click (lock and unlock board functions).
     - [youtube tutorial video](https://www.youtube.com/watch?v=ZniVgo8U7ek)
 
 - Reference on adding audio in JavaScript.
