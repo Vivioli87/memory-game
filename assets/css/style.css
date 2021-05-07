@@ -245,13 +245,6 @@ button.btn.btn-secondary.active-level{
     -moz-perspective:500px;
     -ms-perspective:500px;
     -o-perspective:500px;
-    /* 
-    Added in when fixing safari glitch but need to check if needed before deleting fully
-    backface-visibility: none; 
-    -webkit-backface-visibility:none;
-    -moz-backface-visibility:none;
-    -ms-backface-visibility:none;
-    -o-backface-visibility:none; */
 }
 
 .game-card:hover{
