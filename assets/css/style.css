@@ -235,7 +235,6 @@ button.btn.btn-secondary.active-level{
     width: 125px;
     margin: 5px;
     border-radius: 5px;
-    overflow: hidden;
     position: relative;
     transform-style: preserve-3d;
     display: flex;
